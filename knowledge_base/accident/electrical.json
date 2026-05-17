@@ -1,0 +1,33 @@
+{
+  "id": "electrical",
+  "category": "accident",
+  "title": "Electrical Injury and Electrocution Response Protocol",
+  "severity_tags": ["RED", "YELLOW"],
+  "keywords": ["electrical", "electrocution", "electric shock", "power line", "high voltage", "arc flash", "cardiac arrest", "burns", "power source"],
+  "protocol": {
+    "assessment": "Determine the voltage source: low voltage (<1000V, household/commercial) or high voltage (>1000V, power lines/industrial). Identify the current path through the body (hand-to-hand across the heart is most dangerous). Assess for entry and exit wounds (electrical burns). Check for cardiac arrest, arrhythmia, respiratory arrest, and compartment syndrome. Note: the severity of external burns does NOT correlate with internal injury severity in electrical injuries.",
+    "steps": [
+      "1. Do NOT touch the victim until the power source is confirmed OFF. For household/commercial sources, disconnect at the breaker, unplug the device, or use the emergency shutoff. For high-voltage lines, maintain a minimum distance of 35 feet (10 meters) and wait for the utility company.",
+      "2. If you cannot disconnect power and the victim is in contact with a low-voltage source, use a dry, non-conductive object (wooden broom handle, dry rope, rubber mat) to separate the victim from the source. Stand on a dry, insulating surface.",
+      "3. Once the victim is clear of the electrical source, check for responsiveness and breathing. Electrical injuries frequently cause cardiac arrest; be prepared to begin CPR immediately.",
+      "4. If the victim is in cardiac arrest, begin high-quality CPR (30 compressions to 2 breaths) and apply an AED as soon as available. Electrical injury cardiac arrests have a higher survival rate than other causes if defibrillation is prompt.",
+      "5. Assess for burns at both entry and exit points. Electrical burns are often deeper than they appear. Cool burns with clean, cool water for 20 minutes and cover with sterile, non-adhesive dressings.",
+      "6. Assume spinal injury if the victim was thrown by the electrical force or fell from a height after the shock. Maintain manual cervical spine stabilization.",
+      "7. Monitor for delayed complications: cardiac arrhythmias can develop hours after the initial shock. All electrical injury patients require cardiac monitoring (ECG) for a minimum of 24 hours. Watch for signs of compartment syndrome (severe pain, swelling, numbness) in affected limbs.",
+      "8. Document the voltage source, duration of contact (if known), current path through the body, and all treatments rendered. This information is critical for hospital management."
+    ],
+    "do_not": [
+      "Do NOT touch a victim who is still in contact with an electrical source. You will become a second victim through conducted current.",
+      "Do NOT approach downed high-voltage power lines closer than 35 feet (10 meters). The ground around a downed line can be energized, causing injury through step potential even without direct contact.",
+      "Do NOT assume a victim is uninjured because external burns appear minor. Electrical injuries cause deep tissue destruction, rhabdomyolysis, and cardiac damage that may not be externally visible.",
+      "Do NOT use metal, wet, or damp objects to separate a victim from an electrical source. Use only dry, non-conductive materials."
+    ],
+    "when_to_escalate": "Escalate immediately when: (1) the victim has been exposed to high voltage (>1000V), (2) the victim is in cardiac arrest or showing arrhythmias, (3) the current path crossed the chest (hand-to-hand or hand-to-foot), (4) the victim was thrown or fell from a height, or (5) lightning strike is the mechanism of injury (all lightning victims require immediate ALS transport)."
+  },
+  "translations": {
+    "es": { "title": "Protocolo de Respuesta ante Lesiones El\u00e9ctricas y Electrocuci\u00f3n" },
+    "hi": { "title": "\u0935\u093f\u0926\u094d\u092f\u0941\u0924 \u091a\u094b\u091f \u0914\u0930 \u0935\u093f\u0926\u094d\u092f\u0941\u0924 \u0938\u094d\u092a\u0930\u094d\u0936 \u092a\u094d\u0930\u0924\u093f\u0915\u094d\u0930\u093f\u092f\u093e \u092a\u094d\u0930\u094b\u091f\u094b\u0915\u0949\u0932" },
+    "ar": { "title": "\u0628\u0631\u0648\u062a\u0648\u0643\u0648\u0644 \u0627\u0644\u0627\u0633\u062a\u062c\u0627\u0628\u0629 \u0644\u0644\u0625\u0635\u0627\u0628\u0627\u062a \u0627\u0644\u0643\u0647\u0631\u0628\u0627\u0626\u064a\u0629 \u0648\u0627\u0644\u0635\u0639\u0642 \u0627\u0644\u0643\u0647\u0631\u0628\u0627\u0626\u064a" },
+    "fr": { "title": "Protocole de r\u00e9ponse aux blessures \u00e9lectriques et \u00e9lectrocution" }
+  }
+}

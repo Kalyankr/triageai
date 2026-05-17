@@ -1,0 +1,33 @@
+{
+  "id": "shock",
+  "category": "medical",
+  "title": "Shock Management Protocol",
+  "severity_tags": ["RED"],
+  "keywords": ["shock", "hypotension", "pale", "clammy", "rapid pulse", "hypoperfusion", "circulatory failure", "hypovolemic", "anaphylactic"],
+  "protocol": {
+    "assessment": "Recognize signs of shock: pale, cool, clammy skin; rapid and weak pulse; rapid shallow breathing; confusion, anxiety, or altered consciousness; nausea or vomiting; thirst; delayed capillary refill (greater than 2 seconds). Identify the likely cause — hypovolemic (blood/fluid loss), cardiogenic (heart failure), anaphylactic (allergic reaction), septic (infection), or neurogenic (spinal injury).",
+    "steps": [
+      "1. Call 911 immediately — shock is a life-threatening emergency requiring advanced medical care.",
+      "2. Address the underlying cause if possible: control external bleeding, treat anaphylaxis with epinephrine, etc.",
+      "3. Position the patient supine (lying on their back). If no spinal injury, head injury, or breathing difficulty is suspected, elevate the legs 6-12 inches to improve blood return to the heart.",
+      "4. If the patient has difficulty breathing, allow them to assume a position of comfort (semi-sitting). For suspected spinal injury, keep them flat and still.",
+      "5. Keep the patient warm by covering with blankets or coats — prevent heat loss from the ground by placing a barrier beneath them.",
+      "6. Loosen restrictive clothing such as belts, ties, and tight collars.",
+      "7. Monitor breathing and pulse continuously. Be prepared to begin CPR if the patient becomes unresponsive and stops breathing.",
+      "8. Reassure the patient, keep them calm, and do not leave them alone until EMS arrives."
+    ],
+    "do_not": [
+      "Do NOT give the patient food or drink — they may need surgery or may vomit and aspirate.",
+      "Do NOT elevate the legs if there is a head injury, spinal injury, pelvic fracture, or leg fracture.",
+      "Do NOT allow the patient to stand or walk.",
+      "Do NOT delay calling emergency services while attempting to treat shock — it requires advanced intervention."
+    ],
+    "when_to_escalate": "Shock is already a critical emergency. Escalate immediately by calling 911 at the first sign of shock. All forms of shock require hospital-level care with IV fluids, vasopressors, or surgical intervention. Monitor continuously and begin CPR if cardiac arrest occurs."
+  },
+  "translations": {
+    "es": { "title": "Protocolo de Manejo del Shock" },
+    "hi": { "title": "शॉक प्रबंधन प्रोटोकॉल" },
+    "ar": { "title": "بروتوكول إدارة الصدمة" },
+    "fr": { "title": "Protocole de prise en charge du choc" }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "flood",
+  "category": "disaster",
+  "title": "Flood Response Protocol",
+  "severity_tags": ["RED", "YELLOW", "GREEN"],
+  "keywords": ["flood", "flash flood", "rising water", "evacuation", "contaminated water", "drowning", "water rescue", "levee"],
+  "protocol": {
+    "assessment": "Determine flood type (flash flood vs. riverine/coastal). Assess water depth, flow speed, and direction. Identify trapped individuals and prioritize by immediacy of drowning risk. Evaluate contamination risk from sewage, chemicals, or debris in floodwater. Check for downed power lines in or near water.",
+    "steps": [
+      "1. Monitor official weather alerts and flood warnings. If a flash flood warning is issued, move immediately to higher ground. Do not wait for instructions if water is rising rapidly.",
+      "2. Establish evacuation routes that avoid low-lying areas, underpasses, and bridges over fast-moving water. A route that was safe hours ago may now be submerged.",
+      "3. If evacuation is not possible, move to the highest floor or rooftop of a sturdy building. Signal for rescue with bright cloth, flashlights, or whistles. Avoid attics without roof access.",
+      "4. Do NOT attempt to walk or drive through floodwater. Six inches of moving water can knock an adult down; twelve inches can carry a vehicle. Turn Around, Don't Drown.",
+      "5. For water rescues, use the reach-throw-row-go hierarchy: reach with a pole or branch, throw a flotation device, row a boat, and enter the water only as a last resort with proper training and a personal flotation device.",
+      "6. Treat all floodwater as contaminated. Avoid skin contact with open wounds. Any drinking water that has contacted floodwater must be disinfected by boiling for at least one minute or using purification tablets.",
+      "7. After waters recede, triage casualties using START protocol. Watch for hypothermia, wound infections, and waterborne illness (leptospirosis, cholera, hepatitis A).",
+      "8. Do not return to flooded structures until authorities confirm structural safety. Check for gas leaks, electrical hazards, and animal/snake intrusion before entering."
+    ],
+    "do_not": [
+      "Do NOT walk, swim, or drive through floodwater. Depth and current are deceptive; submerged hazards (open manholes, downed lines) are invisible.",
+      "Do NOT drink or use floodwater for cooking or cleaning wounds. Assume all floodwater is contaminated with sewage, chemicals, and pathogens.",
+      "Do NOT touch or approach downed power lines or electrical equipment in or near water. Electrocution can occur even at a distance through water.",
+      "Do NOT return to a flooded building until it has been inspected for structural damage and utility hazards by qualified personnel."
+    ],
+    "when_to_escalate": "Escalate immediately when: (1) people are trapped on rooftops or in vehicles with rising water, (2) flash flood conditions are present with less than 30 minutes to impact, (3) levee or dam failure is reported or imminent, (4) floodwater has contacted hazardous materials facilities, or (5) mass casualty drowning events occur."
+  },
+  "translations": {
+    "es": { "title": "Protocolo de Respuesta ante Inundaciones" },
+    "hi": { "title": "\u092c\u093e\u0922\u093c \u092a\u094d\u0930\u0924\u093f\u0915\u094d\u0930\u093f\u092f\u093e \u092a\u094d\u0930\u094b\u091f\u094b\u0915\u0949\u0932" },
+    "ar": { "title": "\u0628\u0631\u0648\u062a\u0648\u0643\u0648\u0644 \u0627\u0644\u0627\u0633\u062a\u062c\u0627\u0628\u0629 \u0644\u0644\u0641\u064a\u0636\u0627\u0646\u0627\u062a" },
+    "fr": { "title": "Protocole de r\u00e9ponse aux inondations" }
+  }
+}

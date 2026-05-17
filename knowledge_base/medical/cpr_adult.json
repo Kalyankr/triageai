@@ -1,0 +1,33 @@
+{
+  "id": "cpr_adult",
+  "category": "medical",
+  "title": "Adult CPR and AED Protocol",
+  "severity_tags": ["RED"],
+  "keywords": ["CPR", "cardiac arrest", "chest compressions", "AED", "defibrillator", "unresponsive", "no pulse", "not breathing", "resuscitation"],
+  "protocol": {
+    "assessment": "Check for responsiveness by tapping the shoulders and shouting. If unresponsive, check for normal breathing and a carotid pulse simultaneously for no more than 10 seconds. Agonal gasps (irregular, gasping breaths) are NOT normal breathing. If no pulse and no normal breathing, begin CPR immediately.",
+    "steps": [
+      "1. Ensure scene safety. Call 911 (or direct a bystander to call) and request an AED immediately.",
+      "2. Place the patient on a firm, flat surface. Kneel beside the patient's chest.",
+      "3. Begin chest compressions: place the heel of one hand on the center of the chest (lower half of the sternum), interlock the other hand on top. Keep arms straight and shoulders directly over hands.",
+      "4. Compress hard and fast: push down at least 2 inches (5 cm) but no more than 2.4 inches (6 cm), at a rate of 100-120 compressions per minute. Allow full chest recoil between compressions.",
+      "5. If trained and willing, give rescue breaths: after every 30 compressions, tilt the head back, lift the chin, and give 2 breaths (1 second each) watching for chest rise. Maintain a 30:2 ratio.",
+      "6. If untrained or unwilling, perform hands-only (compression-only) CPR without interruption until EMS arrives or an AED is available.",
+      "7. When an AED arrives: power it on, attach pads to bare dry chest (one upper right, one lower left), follow voice prompts. Ensure no one is touching the patient during analysis and shock delivery.",
+      "8. Resume CPR immediately after AED shock (or if no shock advised). Continue 2-minute cycles of CPR with AED re-analysis until EMS takes over or the patient shows signs of life."
+    ],
+    "do_not": [
+      "Do NOT delay chest compressions to search for a pulse for longer than 10 seconds.",
+      "Do NOT interrupt compressions for more than 10 seconds at a time.",
+      "Do NOT compress too shallow (less than 2 inches) or too slow (less than 100/min).",
+      "Do NOT place AED pads over medication patches, pacemakers, or on a wet chest — dry the chest first and move pads away from devices."
+    ],
+    "when_to_escalate": "CPR is already a maximum-escalation intervention. Continue until advanced EMS providers arrive and take over, the patient regains signs of life (breathing, movement), an AED advises to stop, or you are physically unable to continue and no other trained person is available."
+  },
+  "translations": {
+    "es": { "title": "Protocolo de RCP y DEA para Adultos" },
+    "hi": { "title": "वयस्क सीपीआर और एईडी प्रोटोकॉल" },
+    "ar": { "title": "بروتوكول الإنعاش القلبي الرئوي واستخدام مزيل الرجفان للبالغين" },
+    "fr": { "title": "Protocole de RCP et DEA pour adultes" }
+  }
+}

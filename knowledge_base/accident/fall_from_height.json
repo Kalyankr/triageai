@@ -1,0 +1,33 @@
+{
+  "id": "fall_from_height",
+  "category": "accident",
+  "title": "Fall from Height Response Protocol",
+  "severity_tags": ["RED", "YELLOW"],
+  "keywords": ["fall", "fall from height", "spinal injury", "immobilization", "trauma", "head injury", "fracture", "ladder", "scaffold", "construction"],
+  "protocol": {
+    "assessment": "Determine the height of the fall (significant mechanism: adults >6 feet / 2 meters, children >3 feet / 1 meter, or more than 2-3 times the patient's height). Assess the landing surface (concrete vs. soil vs. water). Identify the body part that impacted first (head-first and feet-first falls have different injury patterns). Check for deformity, swelling, crepitus, and neurological deficits. Assume multi-system trauma in any fall greater than 15 feet (5 meters).",
+    "steps": [
+      "1. Ensure scene safety. Verify the hazard that caused the fall is no longer a threat (unstable structure, ongoing fall hazard for rescuers). Secure ladders, scaffolding, or ledges before approaching the patient.",
+      "2. Assume spinal injury in ALL falls from height until proven otherwise. Approach the patient from the head end and immediately establish manual in-line stabilization (MILS) of the cervical spine. Instruct the patient not to move their head or neck.",
+      "3. Assess airway, breathing, and circulation (ABC) while maintaining spinal immobilization. Open the airway with a jaw-thrust maneuver (NOT head-tilt chin-lift, which can worsen spinal injuries). Provide high-flow oxygen if available.",
+      "4. Control life-threatening hemorrhage with direct pressure, wound packing, or tourniquet. Pelvic fractures from falls can cause massive internal hemorrhage; if the pelvis is unstable, apply a pelvic binder or circumferentially wrap a sheet around the pelvis at the level of the greater trochanters.",
+      "5. Perform a rapid trauma assessment: palpate the spine from the cervical region to the sacrum for step-offs, tenderness, or deformity. Assess all four extremities for fractures, motor function, sensation, and pulses.",
+      "6. Immobilize the patient on a long spine board with a cervical collar, head blocks, and straps. Log-roll the patient using a coordinated team effort (minimum 3 people) with the team leader controlling the head.",
+      "7. Splint all suspected fractures in the position found. Check distal pulses, motor function, and sensation before and after splinting. For open fractures, cover the wound with a moist sterile dressing before splinting.",
+      "8. Monitor neurological status continuously using the Glasgow Coma Scale (GCS). Any decline in GCS, development of unequal pupils, or new neurological deficit indicates potential intracranial hemorrhage and requires immediate ALS transport to a trauma center."
+    ],
+    "do_not": [
+      "Do NOT move the patient until spinal immobilization is established, unless there is an immediate life threat (fire, structural collapse, hazardous environment).",
+      "Do NOT use a head-tilt chin-lift to open the airway. Use the jaw-thrust maneuver to maintain cervical spine alignment.",
+      "Do NOT remove a helmet from a fall victim unless the airway cannot be managed with the helmet in place. If removal is necessary, two rescuers are required: one stabilizes the cervical spine while the other removes the helmet.",
+      "Do NOT allow the patient to sit up or walk, even if they feel fine. Spinal cord injury symptoms can be delayed, and movement can convert a stable spinal fracture into a cord-damaging injury."
+    ],
+    "when_to_escalate": "Escalate immediately when: (1) the fall is greater than 15 feet (5 meters) or involves a head-first landing, (2) the patient has any neurological deficit (numbness, tingling, weakness, paralysis), (3) the patient has altered consciousness or declining GCS, (4) there is suspected pelvic or femur fracture with signs of shock, or (5) the patient is anticoagulated (blood thinners), as even minor head trauma can cause life-threatening intracranial hemorrhage."
+  },
+  "translations": {
+    "es": { "title": "Protocolo de Respuesta ante Ca\u00edda desde Altura" },
+    "hi": { "title": "\u090a\u0901\u091a\u093e\u0908 \u0938\u0947 \u0917\u093f\u0930\u0928\u0947 \u092a\u0930 \u092a\u094d\u0930\u0924\u093f\u0915\u094d\u0930\u093f\u092f\u093e \u092a\u094d\u0930\u094b\u091f\u094b\u0915\u0949\u0932" },
+    "ar": { "title": "\u0628\u0631\u0648\u062a\u0648\u0643\u0648\u0644 \u0627\u0644\u0627\u0633\u062a\u062c\u0627\u0628\u0629 \u0644\u0644\u0633\u0642\u0648\u0637 \u0645\u0646 \u0627\u0631\u062a\u0641\u0627\u0639" },
+    "fr": { "title": "Protocole de r\u00e9ponse aux chutes de hauteur" }
+  }
+}

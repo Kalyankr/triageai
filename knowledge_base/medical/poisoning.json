@@ -1,0 +1,33 @@
+{
+  "id": "poisoning",
+  "category": "medical",
+  "title": "Poisoning and Toxic Ingestion Protocol",
+  "severity_tags": ["RED", "YELLOW"],
+  "keywords": ["poison", "poisoning", "toxic", "ingestion", "overdose", "chemical", "substance", "vomiting", "activated charcoal", "poison control"],
+  "protocol": {
+    "assessment": "Determine the substance involved, amount ingested, time of ingestion, patient's age and weight, and current symptoms. Look for containers, pills, plants, or chemical products near the patient. Signs of poisoning include nausea, vomiting, abdominal pain, altered mental status, unusual breath odor, burns around the mouth (corrosive substances), difficulty breathing, seizures, or unconsciousness.",
+    "steps": [
+      "1. Ensure scene safety — avoid exposure to the same toxic substance. Use gloves and ventilate the area if chemical fumes are present.",
+      "2. Call Poison Control (1-800-222-1222 in the US) or your local poison center immediately for guidance specific to the substance. Call 911 for any life-threatening symptoms.",
+      "3. Identify the substance if safely possible: collect the container, label, remaining pills, or a sample of the substance to provide to medical personnel.",
+      "4. If the patient is conscious and alert, follow the specific instructions provided by Poison Control. Do not give anything by mouth unless directed.",
+      "5. For skin exposure: remove contaminated clothing and rinse the affected skin with large amounts of running water for at least 15-20 minutes.",
+      "6. For eye exposure: flush the eyes with lukewarm water continuously for at least 15-20 minutes, holding the eyelids open.",
+      "7. If the patient is unconscious but breathing, place them in the recovery position to prevent aspiration of vomit. Monitor breathing continuously.",
+      "8. If the patient is not breathing or has no pulse, begin CPR. Note all substances and times for the EMS handoff."
+    ],
+    "do_not": [
+      "Do NOT induce vomiting unless specifically instructed to do so by Poison Control or a physician — vomiting corrosive or petroleum-based substances can cause additional damage.",
+      "Do NOT give activated charcoal without medical direction — it is not effective for all poisons and can cause aspiration.",
+      "Do NOT attempt to neutralize a poison (e.g., giving acid for a base ingestion) — this can cause a dangerous chemical reaction.",
+      "Do NOT give the patient anything to eat or drink unless instructed by Poison Control."
+    ],
+    "when_to_escalate": "Escalate immediately by calling 911 for: unconsciousness or altered mental status, difficulty breathing, seizures, ingestion of known lethal substances (e.g., methanol, antifreeze, button batteries, certain medications in large quantities), corrosive substance ingestion (burns around mouth), or any rapidly worsening symptoms."
+  },
+  "translations": {
+    "es": { "title": "Protocolo de Envenenamiento e Ingestion Toxica" },
+    "hi": { "title": "विषाक्तता और विषैले पदार्थ सेवन प्रोटोकॉल" },
+    "ar": { "title": "بروتوكول التسمم وابتلاع المواد السامة" },
+    "fr": { "title": "Protocole d'empoisonnement et d'ingestion toxique" }
+  }
+}

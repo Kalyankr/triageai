@@ -1,0 +1,33 @@
+{
+  "id": "hurricane",
+  "category": "disaster",
+  "title": "Hurricane and Tropical Storm Response Protocol",
+  "severity_tags": ["RED", "YELLOW", "GREEN"],
+  "keywords": ["hurricane", "tropical storm", "cyclone", "typhoon", "storm surge", "high wind", "shelter in place", "evacuation zone", "eye of storm"],
+  "protocol": {
+    "assessment": "Determine hurricane category (Saffir-Simpson scale 1-5) and current trajectory. Identify if the location is in a storm surge zone, flood zone, or evacuation zone. Assess structural integrity of the shelter (reinforced concrete preferred, avoid mobile homes and wood-frame structures in Category 3+). Monitor for storm surge height predictions and compare to local elevation.",
+    "steps": [
+      "1. Monitor official weather service bulletins continuously. If an evacuation order is issued for your zone, evacuate immediately along designated routes. Do not delay; roads become impassable as the storm approaches.",
+      "2. If sheltering in place, move to an interior room on the lowest floor (bathroom or closet without windows). Stay away from all windows, skylights, and glass doors. Protect yourself with mattresses or heavy blankets.",
+      "3. Board up or shutter all windows and glass doors before the storm arrives. Flying glass from wind-driven debris is a leading cause of hurricane injuries. Apply plywood on the exterior (tape on glass is ineffective).",
+      "4. Fill bathtubs and containers with clean water before the storm. Expect water supply disruption. Prepare a minimum 72-hour supply of water (one gallon per person per day) and non-perishable food.",
+      "5. If the eye of the storm passes over, do NOT go outside. The calm is temporary (minutes to an hour), and the back eyewall brings sudden return of maximum winds from the opposite direction.",
+      "6. After the storm passes, assess injuries using START triage. Watch for storm surge flooding (can arrive hours after wind subsides), downed power lines, and structural damage. Do not walk through floodwater.",
+      "7. Treat trauma injuries from flying debris, broken glass, and structural collapse. Prioritize hemorrhage control and airway management. Anticipate delayed casualties from chainsaw injuries, electrocution, and carbon monoxide poisoning during cleanup.",
+      "8. Establish communication with emergency services when possible. Use text messaging over voice calls to reduce network congestion. Activate ham radio networks if cellular infrastructure is down."
+    ],
+    "do_not": [
+      "Do NOT go outside during the eye of the storm. Winds return suddenly and violently from the opposite direction with no warning.",
+      "Do NOT use generators, grills, or fuel-burning devices indoors or in enclosed spaces. Carbon monoxide poisoning is a leading cause of post-hurricane deaths.",
+      "Do NOT shelter in a mobile home or manufactured housing during any hurricane. These structures cannot withstand hurricane-force winds regardless of tie-down systems.",
+      "Do NOT drive through flooded roads after the storm. Storm surge and rainfall flooding can make roads impassable, and submerged hazards are invisible."
+    ],
+    "when_to_escalate": "Escalate immediately when: (1) storm surge flooding is occurring in occupied areas, (2) structural collapse has trapped occupants, (3) Category 4-5 winds are imminent and evacuation is no longer possible, (4) medical emergencies occur during the storm when EMS transport is suspended, or (5) levee failure or dam breach is reported in the storm's path."
+  },
+  "translations": {
+    "es": { "title": "Protocolo de Respuesta ante Huracanes y Tormentas Tropicales" },
+    "hi": { "title": "\u0924\u0942\u092b\u093e\u0928 \u0914\u0930 \u0909\u0937\u094d\u0923\u0915\u091f\u093f\u092c\u0902\u0927\u0940\u092f \u0924\u0942\u092b\u093e\u0928 \u092a\u094d\u0930\u0924\u093f\u0915\u094d\u0930\u093f\u092f\u093e \u092a\u094d\u0930\u094b\u091f\u094b\u0915\u0949\u0932" },
+    "ar": { "title": "\u0628\u0631\u0648\u062a\u0648\u0643\u0648\u0644 \u0627\u0644\u0627\u0633\u062a\u062c\u0627\u0628\u0629 \u0644\u0644\u0623\u0639\u0627\u0635\u064a\u0631 \u0648\u0627\u0644\u0639\u0648\u0627\u0635\u0641 \u0627\u0644\u0627\u0633\u062a\u0648\u0627\u0626\u064a\u0629" },
+    "fr": { "title": "Protocole de r\u00e9ponse aux ouragans et temp\u00eates tropicales" }
+  }
+}

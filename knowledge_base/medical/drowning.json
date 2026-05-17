@@ -1,0 +1,33 @@
+{
+  "id": "drowning",
+  "category": "medical",
+  "title": "Drowning Rescue and Resuscitation Protocol",
+  "severity_tags": ["RED"],
+  "keywords": ["drowning", "submersion", "water rescue", "rescue breathing", "near-drowning", "aspiration", "swimming", "cardiac arrest", "water safety"],
+  "protocol": {
+    "assessment": "Assess the scene for safety — do not become a second victim. Determine submersion time if possible (critical for prognosis). After rescue, assess responsiveness, breathing, and pulse. Drowning victims may be conscious with coughing, unconscious but breathing, or in full cardiac arrest. The primary cause of death in drowning is hypoxia (oxygen deprivation), making rescue breathing the highest priority.",
+    "steps": [
+      "1. Call 911 immediately. If possible, rescue the person without entering the water — reach with a pole, throw a flotation device, or use a boat. Enter the water ONLY as a last resort if you are a trained swimmer.",
+      "2. Once the patient is on a firm surface, check for responsiveness and breathing. If unresponsive and not breathing normally, begin resuscitation.",
+      "3. Open the airway using head-tilt chin-lift (or jaw-thrust if spinal injury is suspected from diving, water slides, or trauma). Give 5 initial rescue breaths — drowning victims need oxygenation as the first priority.",
+      "4. If there is no response to rescue breaths (no breathing, coughing, or movement), check for a pulse (no more than 10 seconds). If no pulse, begin full CPR with a ratio of 30 compressions to 2 breaths.",
+      "5. If the patient vomits (common in drowning), turn them on their side, clear the airway, and resume CPR.",
+      "6. If a spinal injury is suspected (diving accident, water slide, unknown mechanism), stabilize the head and neck in a neutral position during rescue and resuscitation.",
+      "7. Once breathing resumes, place the patient in the recovery position to allow water to drain from the airway. Keep them warm — remove wet clothing and cover with dry blankets.",
+      "8. All drowning patients who required any resuscitation MUST be transported to a hospital for monitoring — secondary drowning (delayed pulmonary edema) can occur hours after the event."
+    ],
+    "do_not": [
+      "Do NOT attempt a water rescue unless you are a trained and competent swimmer — reach or throw rescue methods are safer.",
+      "Do NOT perform abdominal thrusts (Heimlich maneuver) to remove water from the lungs — it is ineffective and delays CPR.",
+      "Do NOT assume the patient is fine after they start breathing — secondary drowning can occur 1-24 hours later.",
+      "Do NOT skip rescue breaths — unlike standard adult CPR, rescue breathing is critical in drowning because the primary problem is oxygen deprivation, not cardiac."
+    ],
+    "when_to_escalate": "All drowning incidents require emergency medical evaluation, even if the patient appears to recover at the scene. Escalate immediately for any unconsciousness, respiratory distress, persistent coughing, altered mental status, or cardiac arrest. Any patient who was submerged and required rescue breaths or CPR must be monitored in a hospital for at least 4-8 hours for delayed pulmonary complications."
+  },
+  "translations": {
+    "es": { "title": "Protocolo de Rescate y Reanimacion por Ahogamiento" },
+    "hi": { "title": "डूबने पर बचाव और पुनर्जीवन प्रोटोकॉल" },
+    "ar": { "title": "بروتوكول إنقاذ وإنعاش حالات الغرق" },
+    "fr": { "title": "Protocole de sauvetage et de reanimation en cas de noyade" }
+  }
+}

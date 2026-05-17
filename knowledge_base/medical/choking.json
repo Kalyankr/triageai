@@ -1,0 +1,33 @@
+{
+  "id": "choking",
+  "category": "medical",
+  "title": "Choking (Foreign Body Airway Obstruction) Protocol",
+  "severity_tags": ["RED", "YELLOW"],
+  "keywords": ["choking", "airway obstruction", "Heimlich", "abdominal thrusts", "back blows", "gagging", "cyanosis", "foreign body"],
+  "protocol": {
+    "assessment": "Determine if the airway obstruction is mild or severe. Mild obstruction: the person can cough forcefully, speak, or breathe — encourage coughing. Severe obstruction: the person cannot speak, cough, or breathe, may clutch their throat (universal choking sign), and skin may turn blue (cyanotic). A conscious person with severe obstruction requires immediate intervention.",
+    "steps": [
+      "1. Ask the person 'Are you choking?' If they cannot speak, cough, or breathe, confirm severe obstruction and call 911 (or have someone call).",
+      "2. For a CONSCIOUS ADULT or CHILD over 1 year: stand behind the person, give up to 5 sharp back blows between the shoulder blades using the heel of your hand.",
+      "3. If back blows fail, perform abdominal thrusts (Heimlich maneuver): wrap your arms around the person's waist, place the thumb side of your fist just above the navel and below the breastbone, grasp with the other hand, and deliver up to 5 quick inward and upward thrusts.",
+      "4. Alternate between 5 back blows and 5 abdominal thrusts until the object is expelled or the person becomes unconscious.",
+      "5. For a CONSCIOUS INFANT (under 1 year): hold the infant face-down on your forearm, supporting the head. Give 5 back blows between the shoulder blades. Then turn the infant face-up and give 5 chest thrusts using two fingers on the lower sternum.",
+      "6. For a PREGNANT person or OBESE individual: use chest thrusts instead of abdominal thrusts — place your fist on the center of the breastbone and thrust straight backward.",
+      "7. If the person becomes UNCONSCIOUS: lower them to the ground, call 911, and begin CPR. Before each set of rescue breaths, look in the mouth and remove any visible object (finger sweep only if you can see the object).",
+      "8. Continue interventions until the object is expelled, the person can breathe, or EMS arrives."
+    ],
+    "do_not": [
+      "Do NOT perform abdominal thrusts on infants under 1 year — use back blows and chest thrusts only.",
+      "Do NOT perform a blind finger sweep — only remove objects you can clearly see in the mouth.",
+      "Do NOT interfere if the person can cough forcefully — encourage them to keep coughing.",
+      "Do NOT give water or attempt to force-feed the choking person."
+    ],
+    "when_to_escalate": "Escalate immediately if the obstruction cannot be cleared, if the person becomes unconscious (begin CPR and call 911), if there is persistent difficulty breathing or swallowing after the object is removed (possible tissue damage), or if the person required abdominal thrusts (internal injury evaluation needed)."
+  },
+  "translations": {
+    "es": { "title": "Protocolo de Atragantamiento (Obstruccion de Via Aerea)" },
+    "hi": { "title": "श्वास अवरोध (गला घुटना) प्रोटोकॉल" },
+    "ar": { "title": "بروتوكول الاختناق (انسداد مجرى الهواء بجسم غريب)" },
+    "fr": { "title": "Protocole d'etouffement (obstruction des voies aeriennes)" }
+  }
+}

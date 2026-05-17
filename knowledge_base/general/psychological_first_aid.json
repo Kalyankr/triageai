@@ -1,0 +1,33 @@
+{
+  "id": "psychological_first_aid",
+  "category": "general",
+  "title": "Psychological First Aid (PFA) Protocol",
+  "severity_tags": ["YELLOW", "GREEN"],
+  "keywords": ["psychological first aid", "PFA", "emotional support", "crisis", "trauma", "stress", "calming", "mental health", "panic", "grief", "anxiety", "PTSD", "resilience"],
+  "protocol": {
+    "assessment": "Assess the individual's emotional and psychological state. Look for signs of acute stress reaction: disorientation, confusion, hyperventilation, uncontrollable crying, withdrawal, dissociation (blank stare, unresponsive to surroundings), agitation, aggression, or panic. Differentiate between normal stress responses (fear, sadness, anger) and severe reactions requiring immediate mental health referral (psychosis, suicidal ideation, complete catatonia). PFA is based on the WHO and Red Cross framework: Look, Listen, Link.",
+    "steps": [
+      "1. LOOK: Observe the scene for people who may need help. Identify those with acute stress reactions, those who are isolated or withdrawn, and those who may be a danger to themselves or others. Check for immediate safety needs (physical injuries, ongoing threats) before addressing psychological needs.",
+      "2. APPROACH WITH CARE: Introduce yourself calmly and explain your role. Ask permission before providing help: 'My name is [name]. I'm here to help. Is it okay if I sit with you?' Respect the person's decision if they decline assistance. Do not force interaction.",
+      "3. ENSURE SAFETY AND COMFORT: Move the person to a quieter, safer location if possible. Address basic physical needs: water, food, blankets, shade, seating. Physical comfort supports emotional stabilization. Reunite with family members or companions when safe to do so.",
+      "4. LISTEN ACTIVELY: Let the person share what they want to share at their own pace. Use open-ended questions: 'Can you tell me what happened?' or 'How are you feeling right now?' Validate their emotions: 'It's completely normal to feel this way after what you've experienced.' Do NOT minimize their experience.",
+      "5. CALM AND GROUND: For hyperventilating or panicking individuals, guide slow breathing: 'Breathe in for 4 counts, hold for 4, breathe out for 4.' Use grounding techniques: '5-4-3-2-1 method -- Name 5 things you can see, 4 you can touch, 3 you can hear, 2 you can smell, 1 you can taste.' Speak in a slow, calm, steady voice.",
+      "6. PROVIDE PRACTICAL HELP: Help with immediate practical needs: contacting family, accessing shelter, navigating emergency services, finding lost belongings. Practical problem-solving restores a sense of control and reduces helplessness.",
+      "7. LINK TO RESOURCES: Connect the person with available support systems: family, friends, community leaders, faith organizations, professional mental health services, disaster relief organizations. Provide written information about local crisis hotlines and counseling services if available.",
+      "8. FOLLOW UP AND REFER: If possible, check in with the person later. Educate them about normal post-trauma reactions (nightmares, flashbacks, difficulty concentrating, irritability) and when to seek professional help. Refer to professional mental health care if symptoms persist beyond 2-4 weeks or are severely impairing daily function."
+    ],
+    "do_not": [
+      "Do NOT tell someone to 'calm down,' 'get over it,' 'be strong,' or 'it could have been worse.' These statements invalidate their experience and increase distress.",
+      "Do NOT pressure anyone to talk about what happened in detail. Forced debriefing can re-traumatize individuals. Let them share only what they are comfortable sharing, at their own pace.",
+      "Do NOT make promises you cannot keep, such as 'Everything will be okay' or 'Your family is safe' unless you have confirmed this. Broken promises destroy trust and compound trauma.",
+      "Do NOT provide PFA if you are experiencing your own acute stress reaction. Rescuers must address their own psychological needs to avoid compassion fatigue, secondary trauma, and burnout. Seek peer support."
+    ],
+    "when_to_escalate": "Escalate to professional mental health services immediately when: (1) the individual expresses suicidal or homicidal ideation ('I want to die,' 'I want to hurt someone'), (2) the individual is in a psychotic state (hallucinations, delusions, severe disorganization), (3) the individual is a danger to themselves or others through aggressive or self-harming behavior, (4) the individual is completely unresponsive or catatonic, or (5) a child has been separated from all caregivers and is showing severe distress."
+  },
+  "translations": {
+    "es": { "title": "Protocolo de Primeros Auxilios Psicol\u00f3gicos (PAP)" },
+    "hi": { "title": "\u092e\u0928\u094b\u0935\u0948\u091c\u094d\u091e\u093e\u0928\u093f\u0915 \u092a\u094d\u0930\u093e\u0925\u092e\u093f\u0915 \u091a\u093f\u0915\u093f\u0924\u094d\u0938\u093e (PFA) \u092a\u094d\u0930\u094b\u091f\u094b\u0915\u0949\u0932" },
+    "ar": { "title": "\u0628\u0631\u0648\u062a\u0648\u0643\u0648\u0644 \u0627\u0644\u0625\u0633\u0639\u0627\u0641\u0627\u062a \u0627\u0644\u0623\u0648\u0644\u064a\u0629 \u0627\u0644\u0646\u0641\u0633\u064a\u0629" },
+    "fr": { "title": "Protocole de premiers secours psychologiques (PSP)" }
+  }
+}

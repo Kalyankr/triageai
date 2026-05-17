@@ -1,0 +1,33 @@
+{
+  "id": "fractures",
+  "category": "medical",
+  "title": "Fracture Management Protocol",
+  "severity_tags": ["RED", "YELLOW", "GREEN"],
+  "keywords": ["fracture", "broken bone", "splint", "immobilize", "deformity", "swelling", "dislocation", "sprain", "orthopedic"],
+  "protocol": {
+    "assessment": "Look for signs of fracture: deformity, swelling, bruising, tenderness at the site, inability to bear weight or use the limb, crepitus (grinding sensation), and limb shortening or rotation. Compare with the uninjured side. Check circulation, sensation, and movement (CSM) distal to the injury — assess pulse, skin color, capillary refill, and ability to feel and move fingers or toes.",
+    "steps": [
+      "1. Ensure scene safety and call emergency services (911) for open fractures, suspected spinal injuries, pelvic or femur fractures, or any fracture with compromised circulation.",
+      "2. Keep the patient still and calm. Do not attempt to realign the bone or push a protruding bone back in.",
+      "3. Immobilize the injured area in the position found by splinting above and below the fracture site.",
+      "4. Use rigid materials (boards, rolled newspapers) or commercial splints, padded with soft material for comfort.",
+      "5. For open fractures, cover the wound with a sterile dressing before splinting. Control bleeding with gentle pressure around (not on) the fracture site.",
+      "6. Apply a cold pack wrapped in cloth to the injury for 20 minutes to reduce swelling and pain.",
+      "7. Check circulation, sensation, and movement (CSM) below the splint every 15 minutes; loosen if numbness, tingling, or color change occurs.",
+      "8. Elevate the injured limb if possible, keep the patient warm, and treat for shock if needed."
+    ],
+    "do_not": [
+      "Do NOT attempt to straighten or realign a deformed limb.",
+      "Do NOT move the patient if a spinal injury is suspected unless there is immediate danger.",
+      "Do NOT apply the splint too tightly — it can impair circulation.",
+      "Do NOT allow the patient to eat or drink if surgery may be needed."
+    ],
+    "when_to_escalate": "Escalate immediately for open fractures (bone visible or protruding), loss of pulse or sensation below the injury, suspected spinal/pelvic/femur fractures, signs of compartment syndrome (severe pain out of proportion, pain with passive stretch), or if the limb appears pale, blue, or cold below the fracture."
+  },
+  "translations": {
+    "es": { "title": "Protocolo de Manejo de Fracturas" },
+    "hi": { "title": "अस्थि भंग प्रबंधन प्रोटोकॉल" },
+    "ar": { "title": "بروتوكول إدارة الكسور" },
+    "fr": { "title": "Protocole de prise en charge des fractures" }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "scene_safety",
+  "category": "general",
+  "title": "Scene Safety and Hazard Assessment Protocol",
+  "severity_tags": ["RED", "YELLOW", "GREEN"],
+  "keywords": ["scene safety", "hazard", "personal safety", "BSI", "PPE", "situational awareness", "danger zone", "secondary hazard", "active threat"],
+  "protocol": {
+    "assessment": "Before approaching any emergency scene, perform a 360-degree visual scan from a safe distance. Use the mnemonic 'Is the scene safe?' Identify hazards in five categories: (1) Traffic/vehicles, (2) Fire/explosion/smoke, (3) Electrical (downed lines, exposed wiring), (4) Hazardous materials (placards, smells, spills), (5) Violence/active threat (weapons, aggressive individuals). Assess the need for Body Substance Isolation (BSI) precautions and appropriate PPE level.",
+    "steps": [
+      "1. STOP before acting. Resist the urge to rush in. A dead or injured rescuer cannot help anyone and becomes an additional casualty. Take 10 seconds to observe the scene from a safe distance before any approach.",
+      "2. Perform a scene size-up: How many patients? What is the mechanism of injury or nature of illness? What additional resources are needed (fire, police, HAZMAT, utility company)? Is the scene stable or evolving?",
+      "3. Don appropriate PPE before patient contact. Minimum BSI: gloves and eye protection. For blood/body fluid exposure risk: gown, mask, face shield. For respiratory hazards: N95 or higher. For chemical/HAZMAT: specialized PPE per SDS.",
+      "4. Establish a safe approach route. Approach from upwind and uphill for chemical/fire scenes. For traffic incidents, approach from the upstream traffic side with your vehicle as a shield. For violent scenes, wait for law enforcement to secure the area.",
+      "5. Identify and mitigate immediate hazards before patient care: stabilize vehicles, isolate electrical sources, contain small spills, remove bystanders from the danger zone. If the hazard cannot be mitigated, do NOT enter; call for specialized resources.",
+      "6. Establish scene control zones: Hot Zone (immediate danger, restricted to trained personnel with PPE), Warm Zone (decontamination/transition area), Cold Zone (safe area for patient treatment and command). Mark boundaries clearly.",
+      "7. Continuously reassess scene safety throughout the incident. Conditions change: fires spread, structures weaken, chemicals migrate, weather shifts, bystanders interfere. Designate a safety officer for prolonged incidents.",
+      "8. Plan and communicate an emergency withdrawal route before entering any hazardous area. All rescuers must know the exit plan and the signal for immediate evacuation (three short blasts on a whistle or air horn is the universal emergency withdrawal signal)."
+    ],
+    "do_not": [
+      "Do NOT enter any scene you have not confirmed as safe. Personal safety is the absolute first priority. You cannot help victims if you become a casualty.",
+      "Do NOT approach scenes involving active violence (shootings, stabbings, assaults) until law enforcement has declared the scene secure. Stage at a safe distance and be prepared to treat casualties as they are evacuated.",
+      "Do NOT remove or handle unknown substances, packages, or devices. They may be explosive, radiological, or chemical weapons. Maintain distance and request specialized response teams.",
+      "Do NOT work alone in hazardous environments. Always use the buddy system. Maintain visual or voice contact with your partner at all times."
+    ],
+    "when_to_escalate": "Escalate immediately when: (1) the scene involves hazards beyond your training or equipment (HAZMAT, structural collapse, swift water), (2) the number of casualties exceeds your team's capacity, (3) an active threat (violence, ongoing fire, chemical release) makes the scene unsafe for entry, (4) you discover secondary devices or indicators of intentional attack, or (5) any rescuer is injured or exposed to a hazard."
+  },
+  "translations": {
+    "es": { "title": "Protocolo de Seguridad de la Escena y Evaluaci\u00f3n de Peligros" },
+    "hi": { "title": "\u0918\u091f\u0928\u093e\u0938\u094d\u0925\u0932 \u0938\u0941\u0930\u0915\u094d\u0937\u093e \u0914\u0930 \u0916\u0924\u0930\u093e \u092e\u0942\u0932\u094d\u092f\u093e\u0902\u0915\u0928 \u092a\u094d\u0930\u094b\u091f\u094b\u0915\u0949\u0932" },
+    "ar": { "title": "\u0628\u0631\u0648\u062a\u0648\u0643\u0648\u0644 \u0633\u0644\u0627\u0645\u0629 \u0627\u0644\u0645\u0648\u0642\u0639 \u0648\u062a\u0642\u064a\u064a\u0645 \u0627\u0644\u0645\u062e\u0627\u0637\u0631" },
+    "fr": { "title": "Protocole de s\u00e9curit\u00e9 de la sc\u00e8ne et \u00e9valuation des dangers" }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "heart_attack",
+  "category": "medical",
+  "title": "Heart Attack (Myocardial Infarction) Protocol",
+  "severity_tags": ["RED"],
+  "keywords": ["heart attack", "myocardial infarction", "chest pain", "cardiac", "angina", "aspirin", "ACS", "coronary", "STEMI"],
+  "protocol": {
+    "assessment": "Recognize heart attack symptoms: persistent chest pain or pressure (described as squeezing, tightness, heaviness, or burning) that may radiate to the left arm, jaw, neck, back, or stomach. Other signs include shortness of breath, cold sweat, nausea or vomiting, lightheadedness, and extreme fatigue. Women, elderly, and diabetic patients may present with atypical symptoms — fatigue, indigestion, shortness of breath without chest pain, or upper back pressure.",
+    "steps": [
+      "1. Call 911 immediately — do not drive the patient to the hospital. Time is muscle; early treatment saves heart tissue.",
+      "2. Have the patient stop all activity, sit down, or assume a position of comfort — typically sitting up with knees bent (the 'W' position reduces cardiac workload).",
+      "3. If the patient is not allergic to aspirin and is not on blood thinners, have them chew (not swallow whole) one regular aspirin (325 mg) or four baby aspirin (81 mg each). Chewing speeds absorption.",
+      "4. If the patient has prescribed nitroglycerin, help them take it as directed (typically one tablet under the tongue every 5 minutes, up to 3 doses). Do not give nitroglycerin if systolic blood pressure is below 90 mmHg or if they have taken erectile dysfunction medication in the last 24-48 hours.",
+      "5. Keep the patient calm and reassured. Loosen any restrictive clothing.",
+      "6. Monitor breathing and consciousness continuously. Be prepared to perform CPR and use an AED if the patient becomes unresponsive.",
+      "7. If the patient vomits, turn them on their side to prevent aspiration while maintaining their position of comfort.",
+      "8. Note the time symptoms started, medications taken, and medical history (previous heart events, current medications, allergies) for EMS handoff."
+    ],
+    "do_not": [
+      "Do NOT ignore or dismiss symptoms — 'tough it out' delays can be fatal.",
+      "Do NOT give aspirin if the patient is allergic to it, is actively bleeding, or has been told by a doctor not to take it.",
+      "Do NOT allow the patient to exert themselves — no walking, climbing stairs, or moving unnecessarily.",
+      "Do NOT give nitroglycerin if the patient has not been prescribed it, has low blood pressure, or has taken ED medications (sildenafil, tadalafil) recently."
+    ],
+    "when_to_escalate": "A heart attack is always a maximum-priority emergency. Call 911 at the first sign of symptoms. Escalate immediately if the patient becomes unresponsive (begin CPR/AED), if chest pain worsens despite nitroglycerin, if the patient develops difficulty breathing, irregular heartbeat, or if symptoms occur in someone with known cardiac history. Request transport to a facility with cardiac catheterization capability."
+  },
+  "translations": {
+    "es": { "title": "Protocolo de Infarto de Miocardio (Ataque al Corazon)" },
+    "hi": { "title": "दिल का दौरा (मायोकार्डियल इन्फार्क्शन) प्रोटोकॉल" },
+    "ar": { "title": "بروتوكول النوبة القلبية (احتشاء عضلة القلب)" },
+    "fr": { "title": "Protocole d'infarctus du myocarde (crise cardiaque)" }
+  }
+}

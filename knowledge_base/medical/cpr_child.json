@@ -1,0 +1,33 @@
+{
+  "id": "cpr_child",
+  "category": "medical",
+  "title": "Pediatric CPR Protocol (Infant and Child)",
+  "severity_tags": ["RED"],
+  "keywords": ["CPR", "pediatric", "child", "infant", "baby", "cardiac arrest", "not breathing", "chest compressions", "rescue breaths"],
+  "protocol": {
+    "assessment": "Check responsiveness: tap the child's shoulder or flick the infant's foot and shout. If unresponsive, check for normal breathing and a pulse (brachial pulse for infants, carotid for children) for no more than 10 seconds. If no pulse or pulse less than 60 bpm with signs of poor perfusion, begin CPR. Pediatric cardiac arrest is most commonly caused by respiratory failure, so rescue breaths are critical.",
+    "steps": [
+      "1. Ensure scene safety. If alone, perform 2 minutes (5 cycles) of CPR BEFORE calling 911 (unlike adults, where you call first). If a bystander is present, have them call 911 and get an AED immediately.",
+      "2. For a CHILD (age 1 to puberty): place the heel of one hand (or two hands for larger children) on the lower half of the sternum. Compress at least one-third the depth of the chest (approximately 2 inches / 5 cm).",
+      "3. For an INFANT (under age 1): use two fingers (or two-thumb encircling technique if two rescuers) on the lower half of the sternum, just below the nipple line. Compress at least one-third the depth of the chest (approximately 1.5 inches / 4 cm).",
+      "4. Compress at a rate of 100-120 per minute. Allow full chest recoil between compressions.",
+      "5. Give rescue breaths: after every 30 compressions (single rescuer) or 15 compressions (two rescuers), open the airway with head-tilt chin-lift (neutral position for infants, slight extension for children) and give 2 breaths (1 second each). Watch for chest rise.",
+      "6. For infants, cover both the mouth AND nose with your mouth when giving breaths. Use gentle puffs — do not over-inflate.",
+      "7. If an AED is available, use pediatric pads/dose attenuator if the child is under 8 years or under 55 lbs. If unavailable, use adult pads ensuring they do not overlap (place one on the chest and one on the back if needed).",
+      "8. Continue cycles of CPR until EMS arrives, the child shows signs of life, or an AED prompts you to stop."
+    ],
+    "do_not": [
+      "Do NOT use excessive force — pediatric compressions require less depth than adult compressions.",
+      "Do NOT over-ventilate — use gentle breaths just sufficient to see the chest rise.",
+      "Do NOT hyperextend an infant's neck — keep the head in a neutral sniffing position to maintain the airway.",
+      "Do NOT skip rescue breaths in pediatric CPR — respiratory failure is the most common cause of pediatric cardiac arrest."
+    ],
+    "when_to_escalate": "Pediatric cardiac arrest is always a maximum-severity emergency. Continue CPR until advanced EMS providers arrive and take over, the child regains signs of life, or you are physically unable to continue. If the arrest was witnessed and sudden (suggesting cardiac cause), prioritize calling 911 immediately."
+  },
+  "translations": {
+    "es": { "title": "Protocolo de RCP Pediatrica (Lactante y Nino)" },
+    "hi": { "title": "बाल चिकित्सा सीपीआर प्रोटोकॉल (शिशु और बच्चा)" },
+    "ar": { "title": "بروتوكول الإنعاش القلبي الرئوي للأطفال والرضع" },
+    "fr": { "title": "Protocole de RCP pediatrique (nourrisson et enfant)" }
+  }
+}

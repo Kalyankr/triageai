@@ -1,0 +1,33 @@
+{
+  "id": "chemical_spill",
+  "category": "accident",
+  "title": "Chemical Spill and Hazardous Material Exposure Protocol",
+  "severity_tags": ["RED", "YELLOW", "GREEN"],
+  "keywords": ["chemical spill", "hazmat", "hazardous material", "toxic", "decontamination", "ventilation", "MSDS", "SDS", "corrosive", "poisoning", "fumes"],
+  "protocol": {
+    "assessment": "Identify the chemical(s) involved using Safety Data Sheets (SDS), container labels, NFPA 704 diamonds, or DOT hazardous materials placards. Determine the route of exposure: inhalation, skin/eye contact, ingestion, or injection. Assess wind direction to establish upwind positioning. Evaluate the number of exposed individuals, symptoms (respiratory distress, burns, altered consciousness), and the volume of material released.",
+    "steps": [
+      "1. Evacuate the immediate area. Move all personnel upwind and uphill from the spill. Establish an exclusion zone (hot zone) of at least 330 feet (100 meters) for unknown chemicals. Consult the ERG (Emergency Response Guidebook) for substance-specific distances.",
+      "2. Call emergency services and HAZMAT response teams. Provide: chemical name or UN number if known, estimated quantity spilled, number of exposed persons, symptoms observed, and current wind direction.",
+      "3. Ventilate enclosed spaces immediately if safe to do so. Open all doors and windows. Do NOT turn on HVAC systems as they can spread contamination to unaffected areas. Use only explosion-proof ventilation fans for flammable materials.",
+      "4. For skin exposure: remove all contaminated clothing (cut off, do not pull over the head). Flush affected skin with copious amounts of water for at least 20 minutes. For eye exposure: irrigate eyes with clean water or saline for at least 20 minutes, holding eyelids open.",
+      "5. For inhalation exposure: move the victim to fresh air immediately. Administer high-flow oxygen if available. Monitor for delayed-onset pulmonary edema (can develop 24-72 hours after exposure to certain chemicals like phosgene or nitrogen oxides).",
+      "6. Establish a decontamination corridor between the hot zone and the cold zone. All exposed individuals must be decontaminated (clothing removal and water flush) before receiving medical treatment to prevent secondary contamination of rescuers and medical personnel.",
+      "7. Collect and preserve information for medical teams: chemical name, concentration, duration of exposure, route of exposure, and initial symptoms. Contact Poison Control (1-800-222-1222 in US) or consult SDS for substance-specific treatment protocols.",
+      "8. Contain the spill if trained and equipped with proper PPE. Use absorbent materials, berms, or containment booms. Prevent chemicals from entering drains, waterways, or soil. Do NOT attempt to neutralize unknown chemicals."
+    ],
+    "do_not": [
+      "Do NOT enter the spill area without appropriate chemical-resistant PPE (minimum Level B protection for unknown substances). Standard medical gloves and N95 masks do NOT protect against chemical exposure.",
+      "Do NOT attempt to neutralize a chemical spill without specific training and knowledge of the substance involved. Neutralization reactions can generate heat, toxic gases, or explosive conditions.",
+      "Do NOT induce vomiting in chemical ingestion cases unless specifically directed by Poison Control. Many chemicals cause additional damage during emesis.",
+      "Do NOT use water on certain chemical spills (reactive metals like sodium or lithium, concentrated sulfuric acid). Consult the SDS before applying water to any unknown substance."
+    ],
+    "when_to_escalate": "Escalate immediately when: (1) the chemical is unknown or is a known high-toxicity substance (nerve agents, cyanides, hydrogen fluoride), (2) more than 5 people are symptomatic, (3) the spill is uncontained and spreading toward populated areas or waterways, (4) any victim shows signs of systemic toxicity (seizures, cardiac arrhythmia, respiratory failure), or (5) the release involves a gas or highly volatile liquid in an enclosed space."
+  },
+  "translations": {
+    "es": { "title": "Protocolo de Respuesta ante Derrame Qu\u00edmico y Exposici\u00f3n a Materiales Peligrosos" },
+    "hi": { "title": "\u0930\u093e\u0938\u093e\u092f\u0928\u093f\u0915 \u0930\u093f\u0938\u093e\u0935 \u0914\u0930 \u0916\u0924\u0930\u0928\u093e\u0915 \u0938\u093e\u092e\u0917\u094d\u0930\u0940 \u0905\u0928\u093e\u0935\u0930\u0923 \u092a\u094d\u0930\u094b\u091f\u094b\u0915\u0949\u0932" },
+    "ar": { "title": "\u0628\u0631\u0648\u062a\u0648\u0643\u0648\u0644 \u0627\u0644\u0627\u0633\u062a\u062c\u0627\u0628\u0629 \u0644\u0627\u0646\u0633\u0643\u0627\u0628 \u0627\u0644\u0645\u0648\u0627\u062f \u0627\u0644\u0643\u064a\u0645\u064a\u0627\u0626\u064a\u0629 \u0648\u0627\u0644\u062a\u0639\u0631\u0636 \u0644\u0644\u0645\u0648\u0627\u062f \u0627\u0644\u062e\u0637\u0631\u0629" },
+    "fr": { "title": "Protocole de r\u00e9ponse aux d\u00e9versements chimiques et exposition aux mati\u00e8res dangereuses" }
+  }
+}

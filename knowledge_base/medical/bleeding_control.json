@@ -1,0 +1,33 @@
+{
+  "id": "bleeding_control",
+  "category": "medical",
+  "title": "Bleeding Control Protocol",
+  "severity_tags": ["RED", "YELLOW"],
+  "keywords": ["blood", "bleeding", "wound", "cut", "laceration", "hemorrhage", "tourniquet", "arterial", "venous"],
+  "protocol": {
+    "assessment": "Assess the type and severity of bleeding. Arterial bleeding is bright red and spurting; venous bleeding is dark red and steady; capillary bleeding is slow oozing. Check for signs of shock (pale skin, rapid pulse, confusion). Expose the wound to identify the source.",
+    "steps": [
+      "1. Ensure scene safety and put on gloves or use a barrier if available.",
+      "2. Call emergency services (911) immediately for severe or uncontrolled bleeding.",
+      "3. Apply firm, direct pressure to the wound using a clean cloth, gauze, or clothing.",
+      "4. If blood soaks through, add more layers on top without removing the original dressing.",
+      "5. Elevate the injured limb above the level of the heart if possible and no fracture is suspected.",
+      "6. For life-threatening limb bleeding unresponsive to direct pressure, apply a commercial tourniquet 2-3 inches above the wound (not over a joint). Note the time of application.",
+      "7. If no tourniquet is available, pack the wound tightly with gauze or clean cloth and maintain firm pressure.",
+      "8. Keep the patient warm and calm, monitor for signs of shock, and maintain pressure until EMS arrives."
+    ],
+    "do_not": [
+      "Do NOT remove an embedded object from the wound; stabilize it in place with bulky dressings.",
+      "Do NOT remove blood-soaked dressings; layer additional dressings on top.",
+      "Do NOT apply a tourniquet over a joint or on the neck.",
+      "Do NOT use a tourniquet for minor bleeding that can be controlled with direct pressure."
+    ],
+    "when_to_escalate": "Escalate immediately if bleeding cannot be controlled with direct pressure, if the patient shows signs of shock (rapid pulse, pale/clammy skin, confusion, dropping consciousness), if blood is spurting or pooling rapidly, or if the wound involves the neck, chest, or abdomen."
+  },
+  "translations": {
+    "es": { "title": "Protocolo de Control de Hemorragias" },
+    "hi": { "title": "रक्तस्राव नियंत्रण प्रोटोकॉल" },
+    "ar": { "title": "بروتوكول السيطرة على النزيف" },
+    "fr": { "title": "Protocole de controle des hemorragies" }
+  }
+}

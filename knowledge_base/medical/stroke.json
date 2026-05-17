@@ -1,0 +1,33 @@
+{
+  "id": "stroke",
+  "category": "medical",
+  "title": "Stroke Recognition and Response Protocol",
+  "severity_tags": ["RED"],
+  "keywords": ["stroke", "FAST", "cerebrovascular", "TIA", "facial droop", "arm weakness", "speech difficulty", "brain attack", "thrombolytic"],
+  "protocol": {
+    "assessment": "Use the FAST assessment to recognize stroke: F (Face) — ask the person to smile; does one side of the face droop? A (Arms) — ask the person to raise both arms; does one arm drift downward? S (Speech) — ask the person to repeat a simple phrase; is their speech slurred or strange? T (Time) — if any of these signs are present, call 911 immediately and note the time symptoms began. Additional signs include sudden severe headache with no known cause, sudden vision changes, sudden confusion, sudden dizziness or loss of balance.",
+    "steps": [
+      "1. Call 911 immediately — stroke treatment is extremely time-sensitive. Clot-busting medication (tPA) must be given within 3-4.5 hours of symptom onset, and thrombectomy within 24 hours.",
+      "2. Note the EXACT TIME symptoms were first observed or when the patient was last known to be normal — this is critical for treatment decisions.",
+      "3. Perform the FAST assessment and communicate the findings clearly to the 911 dispatcher.",
+      "4. Keep the patient calm and comfortable. Help them lie down with their head and shoulders slightly elevated (about 30 degrees) if possible.",
+      "5. Do not give the patient any food, drink, or medication — swallowing ability may be impaired (dysphagia), and aspirin should only be given under medical direction for stroke.",
+      "6. If the patient is unconscious but breathing, place them in the recovery position on the affected side (weaker side down) to keep the airway clear.",
+      "7. Monitor airway, breathing, and consciousness continuously. Be prepared to perform CPR if the patient stops breathing or loses a pulse.",
+      "8. Gather information for EMS: time of onset, current medications (especially blood thinners), medical history, and a list of the observed symptoms."
+    ],
+    "do_not": [
+      "Do NOT give aspirin or any blood-thinning medication — the stroke may be hemorrhagic (bleeding in the brain), and blood thinners would worsen it.",
+      "Do NOT give the patient food or water — swallowing may be impaired, posing an aspiration risk.",
+      "Do NOT let the patient 'sleep it off' or wait for symptoms to resolve — every minute of delay results in further brain damage.",
+      "Do NOT drive the patient to the hospital yourself unless EMS is unavailable — paramedics can begin assessment en route and direct to a stroke center."
+    ],
+    "when_to_escalate": "A stroke is always a maximum-priority emergency. Call 911 at the first sign of any FAST symptoms. Time is brain — approximately 1.9 million neurons are lost every minute during a stroke. Ensure transport to a designated Stroke Center, not just the nearest hospital. Escalate immediately if the patient becomes unconscious or stops breathing."
+  },
+  "translations": {
+    "es": { "title": "Protocolo de Reconocimiento y Respuesta al Accidente Cerebrovascular" },
+    "hi": { "title": "स्ट्रोक (मस्तिष्क आघात) पहचान और प्रतिक्रिया प्रोटोकॉल" },
+    "ar": { "title": "بروتوكول التعرف على السكتة الدماغية والاستجابة لها" },
+    "fr": { "title": "Protocole de reconnaissance et de reponse a l'accident vasculaire cerebral" }
+  }
+}

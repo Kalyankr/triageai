@@ -1,0 +1,33 @@
+{
+  "id": "burns",
+  "category": "medical",
+  "title": "Burn Injury Protocol",
+  "severity_tags": ["RED", "YELLOW", "GREEN"],
+  "keywords": ["burn", "scald", "thermal", "chemical", "electrical", "blister", "fire", "heat", "degree"],
+  "protocol": {
+    "assessment": "Classify burn degree: First-degree (red, painful, no blisters — superficial). Second-degree (blisters, swelling, severe pain — partial thickness). Third-degree (white/charred, leathery, may be painless — full thickness). Estimate total body surface area (TBSA) affected using the Rule of Nines. Assess airway for inhalation injury (singed facial hair, soot in mouth, hoarse voice).",
+    "steps": [
+      "1. Ensure the scene is safe and remove the patient from the source of the burn.",
+      "2. Call emergency services (911) for burns larger than the patient's palm, burns to the face, hands, feet, genitals, joints, or circumferential burns.",
+      "3. Cool the burn immediately with cool (not ice-cold) running water for at least 10-20 minutes.",
+      "4. Remove clothing and jewelry near the burned area before swelling begins, unless adhered to the skin.",
+      "5. After cooling, cover the burn loosely with a sterile, non-adhesive dressing or clean cling film.",
+      "6. For chemical burns, brush off dry chemicals first, then flush continuously with large amounts of water for at least 20 minutes.",
+      "7. For electrical burns, do not touch the patient until the power source is disconnected; assess for cardiac arrhythmias and entry/exit wounds.",
+      "8. Monitor for shock, keep the patient warm (cover unburned areas), and provide small sips of water if the patient is conscious and alert."
+    ],
+    "do_not": [
+      "Do NOT apply ice, butter, toothpaste, or any home remedies to the burn.",
+      "Do NOT burst blisters, as they protect the underlying tissue from infection.",
+      "Do NOT remove clothing or material stuck to the burned skin.",
+      "Do NOT use fluffy cotton or adhesive bandages directly on the burn."
+    ],
+    "when_to_escalate": "Escalate immediately for third-degree burns of any size, second-degree burns larger than 10% TBSA, burns involving the face/airway/hands/feet/genitals/joints, electrical or chemical burns, burns in children under 5 or adults over 60, or when signs of inhalation injury are present."
+  },
+  "translations": {
+    "es": { "title": "Protocolo de Lesiones por Quemaduras" },
+    "hi": { "title": "जलने की चोट प्रोटोकॉल" },
+    "ar": { "title": "بروتوكول إصابات الحروق" },
+    "fr": { "title": "Protocole de prise en charge des brulures" }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "allergic_reaction",
+  "category": "medical",
+  "title": "Allergic Reaction and Anaphylaxis Protocol",
+  "severity_tags": ["RED", "YELLOW"],
+  "keywords": ["allergy", "allergic reaction", "anaphylaxis", "epinephrine", "epi-pen", "hives", "swelling", "wheezing", "angioedema", "histamine"],
+  "protocol": {
+    "assessment": "Distinguish between mild allergic reaction and anaphylaxis. Mild: localized hives, itching, minor swelling. Anaphylaxis (life-threatening): two or more body systems involved — skin (widespread hives, flushing), respiratory (wheezing, stridor, throat tightness, difficulty breathing), cardiovascular (dizziness, rapid weak pulse, hypotension), GI (nausea, vomiting, abdominal pain). Anaphylaxis can progress to shock and cardiac arrest within minutes.",
+    "steps": [
+      "1. Call 911 immediately if any signs of anaphylaxis are present (difficulty breathing, throat swelling, dizziness, widespread hives with systemic symptoms).",
+      "2. Ask the patient if they carry an epinephrine auto-injector (EpiPen). Help them use it or administer it into the outer mid-thigh (through clothing if necessary). Hold in place for 10 seconds.",
+      "3. Position the patient based on their primary symptom: if having difficulty breathing, allow them to sit upright; if feeling faint or showing signs of shock, lay them down with legs elevated.",
+      "4. Remove the allergen source if possible (e.g., remove a bee stinger by scraping sideways with a flat edge, stop IV medications).",
+      "5. Monitor airway, breathing, and circulation continuously. Be prepared to perform CPR if the patient becomes unresponsive.",
+      "6. If symptoms do not improve within 5-15 minutes, a second dose of epinephrine may be administered (if available) in the opposite thigh.",
+      "7. For mild allergic reactions (localized hives, itching without systemic symptoms), an oral antihistamine (e.g., diphenhydramine) may be given per package instructions.",
+      "8. Note the time of epinephrine administration, the suspected allergen, and all symptoms for EMS handoff."
+    ],
+    "do_not": [
+      "Do NOT delay epinephrine administration in suspected anaphylaxis — antihistamines alone are not sufficient.",
+      "Do NOT have the patient sit up or stand if they are feeling dizzy or faint — this can cause cardiovascular collapse.",
+      "Do NOT rely solely on antihistamines (e.g., Benadryl) to treat anaphylaxis.",
+      "Do NOT attempt to make the patient vomit if the allergen was ingested."
+    ],
+    "when_to_escalate": "Escalate immediately at the first sign of anaphylaxis. Even if epinephrine provides relief, the patient MUST be transported to a hospital for monitoring — biphasic anaphylaxis (recurrence of symptoms hours later) can occur. Escalate if symptoms worsen despite epinephrine, if the patient has no auto-injector available, or if cardiac arrest occurs."
+  },
+  "translations": {
+    "es": { "title": "Protocolo de Reaccion Alergica y Anafilaxia" },
+    "hi": { "title": "एलर्जी प्रतिक्रिया और एनाफिलेक्सिस प्रोटोकॉल" },
+    "ar": { "title": "بروتوكول التفاعل التحسسي والصدمة التأقية" },
+    "fr": { "title": "Protocole de reaction allergique et anaphylaxie" }
+  }
+}

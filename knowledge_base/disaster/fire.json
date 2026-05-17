@@ -1,0 +1,33 @@
+{
+  "id": "fire",
+  "category": "disaster",
+  "title": "Fire and Burn Emergency Protocol",
+  "severity_tags": ["RED", "YELLOW", "GREEN"],
+  "keywords": ["fire", "burn", "smoke", "smoke inhalation", "evacuation", "wildfire", "structure fire", "stop drop roll", "flashover"],
+  "protocol": {
+    "assessment": "Determine fire type (structure, wildfire, vehicle, electrical) and size. Assess wind direction and smoke movement. Identify the number of occupants and potential entrapment locations. Evaluate for smoke inhalation signs: soot around nostrils/mouth, hoarse voice, stridor, singed nasal hairs, or altered consciousness. Classify burn severity by depth (superficial, partial-thickness, full-thickness) and total body surface area (TBSA) using the Rule of Nines.",
+    "steps": [
+      "1. Activate the fire alarm and call emergency services immediately. Provide the exact location, fire type, and number of people believed to be inside the structure.",
+      "2. If clothing is on fire: STOP moving, DROP to the ground, and ROLL back and forth to smother flames. Cover the face with hands while rolling to protect airways.",
+      "3. Evacuate the building using the nearest safe exit. Stay low below smoke level (crawl if necessary, as breathable air is near the floor). Feel doors with the back of your hand before opening; if hot, use an alternate route.",
+      "4. Close doors behind you as you evacuate to slow fire spread. Do NOT use elevators. Proceed to the designated assembly point and account for all occupants.",
+      "5. For smoke inhalation casualties, move to fresh air immediately. Administer high-flow oxygen (100% via non-rebreather mask) if available. Monitor airway continuously as edema can develop rapidly and cause delayed obstruction.",
+      "6. Cool burns with clean, cool (not ice-cold) running water for at least 20 minutes. Remove clothing and jewelry near the burn unless stuck to the skin. Cover with sterile, non-adhesive dressing or clean cling film.",
+      "7. Triage burn patients: RED tag if burns cover more than 20% TBSA in adults (10% in children/elderly), involve the face/airway/hands/feet/genitalia, are circumferential, or are accompanied by smoke inhalation. YELLOW for 10-20% TBSA partial-thickness burns.",
+      "8. Establish a safe perimeter upwind of the fire. Continuously reassess wind direction changes. Prepare for possible structural collapse in building fires after 20 minutes of uncontrolled burning."
+    ],
+    "do_not": [
+      "Do NOT re-enter a burning building for any reason. Inform firefighters of anyone still inside and their likely location.",
+      "Do NOT apply ice, butter, toothpaste, or adhesive dressings directly to burns. These worsen tissue damage and increase infection risk.",
+      "Do NOT break burn blisters. Intact blisters serve as a sterile biological dressing and reduce infection risk.",
+      "Do NOT attempt to fight a fire with a portable extinguisher unless the fire is small, contained, you have a clear escape route, and you are trained in extinguisher use (PASS technique: Pull, Aim, Squeeze, Sweep)."
+    ],
+    "when_to_escalate": "Escalate immediately when: (1) anyone is trapped inside a burning structure, (2) smoke inhalation is suspected (even if the patient appears stable, airway compromise can develop rapidly), (3) burns exceed 10% TBSA or involve critical areas, (4) the fire involves hazardous materials or explosives, or (5) the fire is spreading beyond containment capacity."
+  },
+  "translations": {
+    "es": { "title": "Protocolo de Emergencia por Incendio y Quemaduras" },
+    "hi": { "title": "\u0906\u0917 \u0914\u0930 \u091c\u0932\u0928\u0947 \u0915\u0940 \u0906\u092a\u093e\u0924\u0915\u093e\u0932\u0940\u0928 \u092a\u094d\u0930\u094b\u091f\u094b\u0915\u0949\u0932" },
+    "ar": { "title": "\u0628\u0631\u0648\u062a\u0648\u0643\u0648\u0644 \u0627\u0644\u0637\u0648\u0627\u0631\u0626 \u0644\u0644\u062d\u0631\u0627\u0626\u0642 \u0648\u0627\u0644\u062d\u0631\u0648\u0642" },
+    "fr": { "title": "Protocole d'urgence incendie et br\u00fblures" }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "heatstroke",
+  "category": "medical",
+  "title": "Heatstroke and Heat-Related Illness Protocol",
+  "severity_tags": ["RED", "YELLOW"],
+  "keywords": ["heatstroke", "heat exhaustion", "hyperthermia", "sunstroke", "dehydration", "hot", "temperature", "cooling", "overheating"],
+  "protocol": {
+    "assessment": "Distinguish between heat exhaustion and heatstroke. Heat exhaustion: heavy sweating, weakness, nausea, headache, dizziness, cool moist skin, temperature below 104F (40C). Heatstroke (life-threatening): body temperature at or above 104F (40C), altered mental status (confusion, agitation, slurred speech, delirium, seizures, unconsciousness), hot skin that may be dry OR moist, rapid strong pulse, nausea/vomiting. Heatstroke is a medical emergency requiring immediate aggressive cooling.",
+    "steps": [
+      "1. Call 911 immediately for suspected heatstroke (temperature above 104F/40C with altered mental status).",
+      "2. Move the patient to the coolest available environment — shade, air-conditioned building, or out of direct sunlight.",
+      "3. Begin aggressive cooling immediately: remove excess clothing and apply cold water to the entire body, focusing on the head, neck, armpits, and groin.",
+      "4. If available, immerse the patient in a cold water bath (the most effective cooling method). If not available, apply ice packs to the neck, armpits, and groin.",
+      "5. Fan the patient vigorously while keeping the skin wet to promote evaporative cooling.",
+      "6. For heat exhaustion (milder form): move to a cool area, have the patient lie down with legs elevated, give small sips of cool water or electrolyte solution if conscious and not vomiting.",
+      "7. Monitor body temperature and mental status continuously. Continue cooling efforts until temperature drops below 102F (38.9C) or EMS arrives.",
+      "8. If the patient becomes unconscious, place in the recovery position, monitor breathing, and be prepared to perform CPR."
+    ],
+    "do_not": [
+      "Do NOT give fluids to an unconscious or vomiting patient — risk of aspiration.",
+      "Do NOT delay cooling while waiting for EMS — every minute counts in heatstroke.",
+      "Do NOT use alcohol rubs for cooling — they can cause further complications.",
+      "Do NOT give fever-reducing medications (aspirin, acetaminophen) — they are ineffective for heatstroke and may worsen organ damage."
+    ],
+    "when_to_escalate": "Escalate immediately for any altered mental status (confusion, agitation, loss of consciousness), body temperature above 104F (40C), seizures, cessation of sweating with high body temperature, rapid deterioration, or if heat exhaustion does not improve with cooling and hydration within 30 minutes."
+  },
+  "translations": {
+    "es": { "title": "Protocolo de Golpe de Calor y Enfermedades por Calor" },
+    "hi": { "title": "लू (हीटस्ट्रोक) और गर्मी संबंधी बीमारी प्रोटोकॉल" },
+    "ar": { "title": "بروتوكول ضربة الشمس والأمراض المرتبطة بالحرارة" },
+    "fr": { "title": "Protocole de coup de chaleur et maladies liees a la chaleur" }
+  }
+}

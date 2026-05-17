@@ -1,0 +1,33 @@
+{
+  "id": "recovery_position",
+  "category": "general",
+  "title": "Lateral Recovery Position Protocol",
+  "severity_tags": ["YELLOW", "GREEN"],
+  "keywords": ["recovery position", "lateral", "unconscious", "breathing", "airway", "vomiting", "aspiration", "unresponsive", "stable side position"],
+  "protocol": {
+    "assessment": "The recovery position is indicated for patients who are unconscious (or have a reduced level of consciousness) but are breathing adequately and have a pulse. The purpose is to maintain an open airway and prevent aspiration of vomit or secretions. Assess the patient for: (1) responsiveness level, (2) adequate breathing, (3) presence of a pulse, (4) suspected spinal injury (contraindication unless airway is at risk), (5) injuries to limbs that may prevent positioning.",
+    "steps": [
+      "1. Confirm the patient is unresponsive but breathing with a pulse. If the patient is not breathing or has no pulse, begin CPR instead. The recovery position is NOT appropriate for patients requiring resuscitation.",
+      "2. Kneel beside the patient. Remove any glasses and bulky items from pockets. Ensure the area around the patient is clear of objects that could cause injury.",
+      "3. Position the arm nearest to you at a right angle to the body, elbow bent, with the palm facing upward. This arm will act as a stabilizer and prevent the patient from rolling onto their face.",
+      "4. Bring the far arm across the chest and hold the back of the patient's far hand against their near cheek. Keep holding it there; this will cushion the head when the patient is rolled.",
+      "5. With your other hand, grasp the far knee and pull it up so the foot is flat on the ground. Use this bent leg as a lever to roll the patient toward you in a smooth, controlled motion.",
+      "6. Pull on the far leg to roll the patient onto their side, toward you. The patient should now be lying on their side with the head resting on their hand and the upper leg bent at the hip and knee for stability.",
+      "7. Adjust the upper leg so both the hip and knee are bent at right angles for maximum stability. Tilt the head back gently to ensure the airway remains open. Adjust the hand under the cheek to maintain the head-tilt position.",
+      "8. Monitor breathing continuously. Check that the airway is clear and the patient has not rolled onto their face or back. If the patient must remain in the recovery position for more than 30 minutes, turn them to the opposite side to relieve pressure on the lower arm and prevent nerve damage."
+    ],
+    "do_not": [
+      "Do NOT place a patient in the recovery position if they are not breathing or have no pulse. These patients require CPR and rescue breathing, not positioning.",
+      "Do NOT use the recovery position if spinal injury is suspected, unless the patient is vomiting and the airway is at immediate risk. In that case, log-roll the patient with spinal precautions using multiple rescuers.",
+      "Do NOT leave a patient in the recovery position unattended. Continuous monitoring of breathing and airway patency is essential. Patients can deteriorate from breathing to cardiac arrest rapidly.",
+      "Do NOT place the patient on their back if they are vomiting or have blood/secretions in the airway. Aspiration of vomit is a major cause of preventable death in unconscious patients."
+    ],
+    "when_to_escalate": "Escalate immediately when: (1) the patient stops breathing or loses their pulse (begin CPR), (2) the patient's level of consciousness deteriorates further (GCS declining), (3) the patient begins seizing, (4) there is evidence of head injury or rising intracranial pressure (unequal pupils, posturing), or (5) the cause of unconsciousness is unknown and the patient does not regain consciousness within 5 minutes."
+  },
+  "translations": {
+    "es": { "title": "Protocolo de Posici\u00f3n Lateral de Recuperaci\u00f3n" },
+    "hi": { "title": "\u092a\u093e\u0930\u094d\u0936\u094d\u0935 \u0930\u093f\u0915\u0935\u0930\u0940 \u092a\u094b\u091c\u093c\u0940\u0936\u0928 \u092a\u094d\u0930\u094b\u091f\u094b\u0915\u0949\u0932" },
+    "ar": { "title": "\u0628\u0631\u0648\u062a\u0648\u0643\u0648\u0644 \u0648\u0636\u0639\u064a\u0629 \u0627\u0644\u0625\u0641\u0627\u0642\u0629 \u0627\u0644\u062c\u0627\u0646\u0628\u064a\u0629" },
+    "fr": { "title": "Protocole de position lat\u00e9rale de s\u00e9curit\u00e9 (PLS)" }
+  }
+}

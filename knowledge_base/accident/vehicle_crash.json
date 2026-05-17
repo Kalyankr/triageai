@@ -1,0 +1,33 @@
+{
+  "id": "vehicle_crash",
+  "category": "accident",
+  "title": "Vehicle Crash Response Protocol",
+  "severity_tags": ["RED", "YELLOW", "GREEN", "BLACK"],
+  "keywords": ["vehicle crash", "car accident", "collision", "MVC", "motor vehicle", "extraction", "fuel leak", "rollover", "entrapment", "scene safety"],
+  "protocol": {
+    "assessment": "Survey the scene from a safe distance before approaching. Determine the number of vehicles involved, vehicle types (car, truck, motorcycle, pedestrian), and mechanism of injury (head-on, T-bone, rollover, rear-end). Estimate speed of impact. Check for fuel leaks (smell of gasoline, visible pooling), fire, downed power lines, and hazardous cargo placards. Count the number of casualties, including ejected occupants and pedestrians.",
+    "steps": [
+      "1. Ensure scene safety first. Park your vehicle at least 100 feet from the crash site, uphill and upwind if possible. Activate hazard lights. Place warning triangles or flares to alert oncoming traffic. Wear a high-visibility vest if available.",
+      "2. Call emergency services (911/112) with: exact location, number of vehicles and casualties, presence of entrapment, fire, fuel leaks, or hazardous materials. Request fire/rescue for any entrapment or fuel leak.",
+      "3. Stabilize vehicles before approaching. Turn off ignitions if safely accessible. Place vehicles in park and engage parking brakes. Chock wheels of overturned or precariously positioned vehicles if trained to do so.",
+      "4. Perform START triage on all casualties. Check Respiration (rate >30 = RED), Perfusion (absent radial pulse = RED), Mental status (cannot follow commands = RED). Tag accordingly.",
+      "5. Control life-threatening hemorrhage immediately with direct pressure, wound packing, or tourniquet. Do NOT remove impaled objects; stabilize them in place with bulky dressings.",
+      "6. Assume spinal injury in all high-mechanism crashes (rollover, ejection, speed >40 mph, death in same vehicle). Maintain manual cervical spine stabilization. Do NOT remove helmets from motorcyclists unless airway is compromised and you are trained.",
+      "7. Do NOT attempt vehicle extraction unless there is an immediate life threat (fire, submersion, advancing hazard). Untrained extraction attempts cause secondary injuries. Wait for fire/rescue extrication teams.",
+      "8. Monitor all casualties continuously for deterioration. Reassess triage categories every 5 minutes. Prepare a casualty report for arriving EMS: number of patients, triage categories, treatments rendered, and mechanism of injury."
+    ],
+    "do_not": [
+      "Do NOT approach the scene if there are downed power lines, active fire without suppression equipment, or a visible hazardous materials placard without proper PPE.",
+      "Do NOT move a crash victim from the vehicle unless there is an immediate life threat (fire, submersion, structural instability). Movement without spinal precautions can cause permanent paralysis.",
+      "Do NOT remove an impaled object from any wound. Stabilize it in place. Removal can cause catastrophic hemorrhage.",
+      "Do NOT smoke or allow open flames anywhere near a crash scene. Fuel vapors can ignite explosively even when no visible liquid is present."
+    ],
+    "when_to_escalate": "Escalate immediately when: (1) any occupant is entrapped and requires mechanical extrication, (2) fuel leak or fire is present, (3) hazardous materials are involved (check vehicle placards), (4) mass casualty criteria are met (5+ patients or 3+ RED-tagged), or (5) a crash involves a bus, commercial vehicle, or vehicle carrying passengers."
+  },
+  "translations": {
+    "es": { "title": "Protocolo de Respuesta ante Accidente Vehicular" },
+    "hi": { "title": "\u0935\u093e\u0939\u0928 \u0926\u0941\u0930\u094d\u0918\u091f\u0928\u093e \u092a\u094d\u0930\u0924\u093f\u0915\u094d\u0930\u093f\u092f\u093e \u092a\u094d\u0930\u094b\u091f\u094b\u0915\u0949\u0932" },
+    "ar": { "title": "\u0628\u0631\u0648\u062a\u0648\u0643\u0648\u0644 \u0627\u0644\u0627\u0633\u062a\u062c\u0627\u0628\u0629 \u0644\u062d\u0648\u0627\u062f\u062b \u0627\u0644\u0645\u0631\u0643\u0628\u0627\u062a" },
+    "fr": { "title": "Protocole de r\u00e9ponse aux accidents de v\u00e9hicules" }
+  }
+}

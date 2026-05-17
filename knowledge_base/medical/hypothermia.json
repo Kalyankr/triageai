@@ -1,0 +1,33 @@
+{
+  "id": "hypothermia",
+  "category": "medical",
+  "title": "Hypothermia Protocol",
+  "severity_tags": ["RED", "YELLOW"],
+  "keywords": ["hypothermia", "cold", "freezing", "frostbite", "shivering", "warming", "exposure", "core temperature", "rewarming"],
+  "protocol": {
+    "assessment": "Classify severity by signs: Mild hypothermia (90-95F / 32-35C): shivering, cold pale skin, numbness, impaired coordination, slurred speech. Moderate hypothermia (82-90F / 28-32C): shivering may stop, drowsiness, confusion, slow pulse, shallow breathing. Severe hypothermia (below 82F / 28C): no shivering, loss of consciousness, very slow or absent pulse, rigid muscles, fixed dilated pupils. The heart becomes extremely irritable in severe hypothermia and is prone to lethal arrhythmias with rough handling.",
+    "steps": [
+      "1. Call 911 immediately for moderate or severe hypothermia (confusion, drowsiness, loss of shivering, or unconsciousness).",
+      "2. Move the patient gently to a warm, sheltered environment. Handle the patient VERY GENTLY — rough movement can trigger fatal cardiac arrhythmias in severe hypothermia.",
+      "3. Remove wet clothing by cutting it off rather than pulling it over the head. Replace with dry clothing, blankets, or sleeping bags.",
+      "4. Insulate the patient from the ground using blankets, sleeping pads, or dry materials beneath them.",
+      "5. Apply passive rewarming: cover the patient with blankets including the head (leaving the face exposed), and use warm dry compresses or chemical heat packs to the neck, armpits, and groin — areas where large blood vessels are close to the surface.",
+      "6. For mild hypothermia in a conscious alert patient: give warm (not hot) sweet beverages. Encourage gentle movement to generate body heat.",
+      "7. Monitor breathing and pulse for up to 60 seconds (pulse may be very slow and faint). If no pulse is detected after a thorough check, begin CPR.",
+      "8. Continue rewarming and monitoring until EMS arrives. Do not assume a severely hypothermic patient is dead — 'a patient is not dead until they are warm and dead.'"
+    ],
+    "do_not": [
+      "Do NOT rub or massage the patient's extremities — this can drive cold blood to the core and worsen hypothermia, and can damage frostbitten tissue.",
+      "Do NOT apply direct heat (hot water, heating pads, fire) to the skin — it can cause burns on numb skin and trigger dangerous cardiac arrhythmias.",
+      "Do NOT give alcohol — it causes vasodilation and increases heat loss.",
+      "Do NOT give food or drinks to a patient who is confused, drowsy, or unconscious — aspiration risk."
+    ],
+    "when_to_escalate": "Escalate immediately for any moderate or severe hypothermia (confusion, cessation of shivering, drowsiness, loss of consciousness), core temperature below 90F (32C), cardiac arrhythmias, or if the patient is not improving with passive rewarming. All hypothermia patients should be evaluated at a hospital for core temperature measurement and monitored rewarming."
+  },
+  "translations": {
+    "es": { "title": "Protocolo de Hipotermia" },
+    "hi": { "title": "हाइपोथर्मिया (अल्प तापमान) प्रोटोकॉल" },
+    "ar": { "title": "بروتوكول انخفاض حرارة الجسم" },
+    "fr": { "title": "Protocole de prise en charge de l'hypothermie" }
+  }
+}

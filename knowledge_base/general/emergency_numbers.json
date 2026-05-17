@@ -1,0 +1,33 @@
+{
+  "id": "emergency_numbers",
+  "category": "general",
+  "title": "International Emergency Numbers by Country and Region",
+  "severity_tags": ["RED", "YELLOW", "GREEN"],
+  "keywords": ["emergency number", "911", "112", "999", "ambulance", "fire department", "police", "poison control", "helpline", "international", "country code"],
+  "protocol": {
+    "assessment": "Identify the country or region where the emergency is occurring to determine the correct emergency number. In many countries, multiple numbers exist for different services (police, fire, medical). When in doubt, 112 is the international standard emergency number and works in all EU countries, and on GSM mobile phones worldwide (even without a SIM card in many networks). Always provide: your exact location, nature of the emergency, number of casualties, and a callback number.",
+    "steps": [
+      "1. NORTH AMERICA: United States and Canada: 911 (all emergencies). Mexico: 911 (unified), 065 (Red Cross ambulance). US Poison Control: 1-800-222-1222. Suicide and Crisis Lifeline (US): 988.",
+      "2. EUROPE (EU/EEA): 112 (universal emergency number across all EU member states). Additionally: UK: 999 (all services) or 112. Germany: 110 (police), 112 (fire/medical). France: 15 (medical/SAMU), 17 (police), 18 (fire), 112 (universal). Italy: 112 (unified). Spain: 112 (unified). Netherlands: 112. Russia: 112 (unified), 103 (ambulance), 101 (fire).",
+      "3. ASIA: India: 112 (unified), 102 (ambulance), 100 (police), 101 (fire). China: 120 (ambulance), 110 (police), 119 (fire). Japan: 119 (fire/ambulance), 110 (police). South Korea: 119 (fire/ambulance), 112 (police). Philippines: 911. Indonesia: 118/119 (ambulance), 110 (police), 113 (fire). Singapore: 995 (fire/ambulance), 999 (police).",
+      "4. MIDDLE EAST AND NORTH AFRICA: Saudi Arabia: 911 (unified), 997 (ambulance). UAE: 999 (police), 998 (ambulance), 997 (fire). Israel: 101 (ambulance/MDA), 100 (police), 102 (fire). Egypt: 123 (ambulance), 122 (police), 180 (fire). Turkey: 112 (unified).",
+      "5. AFRICA: South Africa: 10177 (ambulance), 10111 (police). Nigeria: 112 or 199. Kenya: 999 or 112. Ghana: 112 or 193. Ethiopia: 907 (ambulance), 991 (police). Pan-African: many countries are transitioning to 112 as a universal number.",
+      "6. SOUTH AMERICA: Brazil: 192 (ambulance/SAMU), 190 (police), 193 (fire). Argentina: 107 (ambulance), 911 (police). Colombia: 123 (unified). Chile: 131 (ambulance), 133 (police), 132 (fire). Peru: 105 (police), 116 (fire).",
+      "7. OCEANIA: Australia: 000 (all services), 112 (mobile phones). New Zealand: 111 (all services). Both countries support 112 from mobile phones as an international redirect.",
+      "8. GENERAL GUIDANCE: When calling any emergency number, stay calm and speak clearly. State your location first (address, landmarks, GPS coordinates if available). Describe the emergency type and number of people injured. Stay on the line until the dispatcher ends the call. If you are in a foreign country and do not speak the local language, say 'English' or 'help' -- many dispatch centers have multilingual capability."
+    ],
+    "do_not": [
+      "Do NOT hang up until the emergency dispatcher tells you to. They may need additional information or may provide life-saving instructions while help is en route.",
+      "Do NOT assume that your local emergency number works in other countries. Research the local emergency number before traveling internationally. Store it in your phone contacts.",
+      "Do NOT call emergency numbers for non-emergency situations. Misuse overloads the system and delays response to genuine emergencies. Use non-emergency police lines or urgent care for non-life-threatening situations.",
+      "Do NOT forget that 112 works from any GSM mobile phone in most countries worldwide, even without a SIM card, and is often the safest default when you are unsure of the local number."
+    ],
+    "when_to_escalate": "Escalate immediately when: (1) you cannot reach emergency services through local numbers (try 112 as a fallback), (2) the dispatcher does not speak your language (request an interpreter or try a different number), (3) you are in a remote area without cellular coverage (use satellite communication if available, or send someone to the nearest point of coverage), (4) the emergency involves multiple casualties requiring mass casualty incident (MCI) activation, or (5) you suspect the emergency involves terrorism, active threat, or CBRN agents -- explicitly tell the dispatcher."
+  },
+  "translations": {
+    "es": { "title": "N\u00fameros de Emergencia Internacionales por Pa\u00eds y Regi\u00f3n" },
+    "hi": { "title": "\u0926\u0947\u0936 \u0914\u0930 \u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u0915\u0947 \u0905\u0928\u0941\u0938\u093e\u0930 \u0905\u0902\u0924\u0930\u094d\u0930\u093e\u0937\u094d\u091f\u094d\u0930\u0940\u092f \u0906\u092a\u093e\u0924\u0915\u093e\u0932\u0940\u0928 \u0928\u0902\u092c\u0930" },
+    "ar": { "title": "\u0623\u0631\u0642\u0627\u0645 \u0627\u0644\u0637\u0648\u0627\u0631\u0626 \u0627\u0644\u062f\u0648\u0644\u064a\u0629 \u062d\u0633\u0628 \u0627\u0644\u0628\u0644\u062f \u0648\u0627\u0644\u0645\u0646\u0637\u0642\u0629" },
+    "fr": { "title": "Num\u00e9ros d'urgence internationaux par pays et r\u00e9gion" }
+  }
+}

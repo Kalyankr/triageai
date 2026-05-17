@@ -1,0 +1,33 @@
+{
+  "id": "head_injury",
+  "category": "medical",
+  "title": "Head Injury and Concussion Protocol",
+  "severity_tags": ["RED", "YELLOW"],
+  "keywords": ["head injury", "concussion", "traumatic brain injury", "TBI", "skull fracture", "cervical spine", "loss of consciousness", "vomiting", "confusion"],
+  "protocol": {
+    "assessment": "Assess mechanism of injury and severity. Mild (concussion): brief confusion, headache, dizziness, nausea, no prolonged loss of consciousness. Severe: prolonged unconsciousness, amnesia, repeated vomiting, seizures, clear fluid from ears/nose (CSF leak), unequal pupils, worsening headache, weakness on one side. Always assume a cervical spine injury in significant head trauma until cleared.",
+    "steps": [
+      "1. Call 911 immediately for any loss of consciousness, confusion, repeated vomiting, seizure, clear fluid from ears or nose, or worsening symptoms.",
+      "2. Stabilize the cervical spine: instruct the patient not to move their head or neck. Manually hold the head in a neutral inline position if trained to do so.",
+      "3. If the patient is unresponsive but breathing, maintain the airway using a jaw-thrust maneuver (not head-tilt chin-lift, to protect the spine) and place in the recovery position only if absolutely necessary and spinal injury is unlikely.",
+      "4. Control any scalp bleeding with gentle direct pressure using a clean dressing. Do not apply pressure if a skull fracture is suspected (depressed area, visible bone).",
+      "5. Monitor level of consciousness using AVPU (Alert, responds to Voice, responds to Pain, Unresponsive) and reassess every 5 minutes.",
+      "6. Check and record pupil size and reactivity — unequal or non-reactive pupils indicate a serious brain injury.",
+      "7. For mild concussion with no red-flag signs: monitor the patient for at least 24 hours, keep them awake for the first few hours, and watch for worsening symptoms.",
+      "8. Keep the patient still and calm, note the time and mechanism of injury, and relay all findings to EMS."
+    ],
+    "do_not": [
+      "Do NOT move the patient or allow them to walk unless the scene is immediately dangerous — assume spinal injury.",
+      "Do NOT remove any object embedded in the skull.",
+      "Do NOT apply direct pressure to a suspected skull fracture or depressed area.",
+      "Do NOT give the patient aspirin or blood-thinning medications, which can worsen intracranial bleeding."
+    ],
+    "when_to_escalate": "Escalate immediately for any loss of consciousness, worsening or severe headache, repeated vomiting, seizure, unequal pupils, clear fluid from ears or nose, weakness or numbness on one side of the body, slurred speech, or any deterioration in level of consciousness. All head injuries with a significant mechanism should be evaluated at a hospital."
+  },
+  "translations": {
+    "es": { "title": "Protocolo de Lesion Craneal y Concusion" },
+    "hi": { "title": "सिर की चोट और कंकशन प्रोटोकॉल" },
+    "ar": { "title": "بروتوكول إصابات الرأس والارتجاج" },
+    "fr": { "title": "Protocole de traumatisme cranien et commotion cerebrale" }
+  }
+}

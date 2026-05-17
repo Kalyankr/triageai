@@ -1,0 +1,33 @@
+{
+  "id": "earthquake",
+  "category": "disaster",
+  "title": "Earthquake Response Protocol",
+  "severity_tags": ["RED", "YELLOW"],
+  "keywords": ["earthquake", "tremor", "rubble", "collapse", "aftershock", "seismic", "shaking", "building damage"],
+  "protocol": {
+    "assessment": "Evaluate structural integrity of immediate surroundings. Check for gas leaks (smell, hissing sounds), downed power lines, and visible structural cracks. Assess the number of casualties and their locations relative to debris fields. Use the START triage method to prioritize patients by severity.",
+    "steps": [
+      "1. DROP to your hands and knees to prevent being knocked down. COVER your head and neck under sturdy furniture or against an interior wall. HOLD ON until shaking stops.",
+      "2. Once shaking stops, check yourself for injuries before assisting others. Put on sturdy shoes and gloves to protect against broken glass and debris.",
+      "3. Evacuate damaged buildings immediately. Move to an open area away from structures, power lines, and trees. Watch for falling debris during aftershocks.",
+      "4. Check for gas leaks by smell only. If gas is detected, open windows, evacuate the area, and do not use electrical switches, lighters, or matches.",
+      "5. Administer START triage to all casualties: check Respiration, Perfusion (radial pulse), and Mental status. Tag RED (immediate), YELLOW (delayed), GREEN (minor), or BLACK (deceased).",
+      "6. Treat life-threatening hemorrhage with direct pressure and tourniquets before moving patients. Stabilize spinal injuries with manual in-line stabilization.",
+      "7. Establish a casualty collection point (CCP) in an open, structurally safe area. Organize patients by triage category for efficient transport.",
+      "8. Prepare for aftershocks: maintain situational awareness, keep exit routes clear, and reassess structural safety continuously. Aftershocks can occur minutes to weeks after the initial event."
+    ],
+    "do_not": [
+      "Do NOT re-enter damaged or collapsed buildings to search for survivors unless you are trained in urban search and rescue (USAR).",
+      "Do NOT use elevators during or after an earthquake. Stairwells may also be compromised; inspect before use.",
+      "Do NOT light matches, candles, or operate electrical switches if you suspect a gas leak.",
+      "Do NOT move patients with suspected spinal injuries unless there is an immediate life threat (fire, structural collapse, gas leak)."
+    ],
+    "when_to_escalate": "Escalate immediately when: (1) there are confirmed building collapses with trapped survivors, (2) hazardous material releases are detected, (3) the number of RED-tagged casualties exceeds local medical capacity, (4) critical infrastructure (hospitals, water, power) is compromised, or (5) aftershock activity is intensifying."
+  },
+  "translations": {
+    "es": { "title": "Protocolo de Respuesta ante Terremoto" },
+    "hi": { "title": "\u092d\u0942\u0915\u0902\u092a \u092a\u094d\u0930\u0924\u093f\u0915\u094d\u0930\u093f\u092f\u093e \u092a\u094d\u0930\u094b\u091f\u094b\u0915\u0949\u0932" },
+    "ar": { "title": "\u0628\u0631\u0648\u062a\u0648\u0643\u0648\u0644 \u0627\u0644\u0627\u0633\u062a\u062c\u0627\u0628\u0629 \u0644\u0644\u0632\u0644\u0627\u0632\u0644" },
+    "fr": { "title": "Protocole de r\u00e9ponse aux tremblements de terre" }
+  }
+}
