@@ -274,6 +274,15 @@ def run_triage_offline(text: str, language: str) -> dict:
 def run_triage_with_model(text: str, image, language: str) -> dict:
     """Run triage using loaded Gemma 4 model."""
     import torch
+    from PIL import Image as PILImage
+
+    # image is now a filepath string (from gr.Image type="filepath")
+    pil_image = None
+    if image is not None:
+        try:
+            pil_image = PILImage.open(image).convert("RGB")
+        except Exception:
+            pil_image = None
 
     tools_text = """You have access to these emergency triage tools. Call them by outputting JSON in ```tool_call``` blocks:
 
@@ -303,11 +312,8 @@ RULES: Prioritize safety. Include DO NOT warnings. Be direct and actionable."""
 
     prompt = processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
 
-    if image is not None:
-        from PIL import Image as PILImage
-        if not isinstance(image, PILImage.Image):
-            image = PILImage.open(image).convert("RGB")
-        inputs = processor(text=prompt, images=[image], return_tensors="pt").to(model.device)
+    if pil_image is not None:
+        inputs = processor(text=prompt, images=[pil_image], return_tensors="pt").to(model.device)
     else:
         inputs = processor(text=prompt, return_tensors="pt").to(model.device)
 
@@ -472,7 +478,7 @@ with gr.Blocks(css=CSS, title="TriageAI — Emergency Triage", theme=gr.themes.S
                 value="Auto-detect",
                 label="Language",
             )
-            image = gr.Image(label="Upload Emergency Photo (optional)", type="pil")
+            image = gr.Image(label="Upload Emergency Photo (optional)", type="filepath")
             text = gr.Textbox(
                 label="Describe the Emergency",
                 placeholder="E.g., 'My friend cut his arm on broken glass and is bleeding heavily...'",
@@ -483,12 +489,12 @@ with gr.Blocks(css=CSS, title="TriageAI — Emergency Triage", theme=gr.themes.S
             with gr.Row():
                 for name in list(QUICK_SCENARIOS.keys())[:3]:
                     gr.Button(name, size="sm").click(
-                        fn=lambda n=name: fill_scenario(n), outputs=text
+                        fn=lambda n=name: fill_scenario(n), outputs=text, api_name=False
                     )
             with gr.Row():
                 for name in list(QUICK_SCENARIOS.keys())[3:]:
                     gr.Button(name, size="sm").click(
-                        fn=lambda n=name: fill_scenario(n), outputs=text
+                        fn=lambda n=name: fill_scenario(n), outputs=text, api_name=False
                     )
 
             submit_btn = gr.Button("🚨 TRIAGE NOW", variant="primary", size="lg")
