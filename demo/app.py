@@ -179,6 +179,201 @@ MODEL_LOADED = False
 model = None
 processor = None
 
+TRANSLATIONS = {
+    "Spanish": {
+        "call":    "📞 LLAME AL 112 / 911",
+        "do_now":  "⚡ ACCIONES INMEDIATAS",
+        "do_not":  "🚫 NO HACER",
+        "image":   "📷 Imagen recibida. Análisis visual completo disponible en modo GPU.",
+        "steps": {
+            "medical_injury": [
+                "Asegure su propia seguridad antes de acercarse",
+                "Aplique presión directa sobre heridas sangrantes con paño limpio",
+                "Si sangrado no para en un miembro, aplique torniquete 5–7 cm sobre la herida",
+                "Inmovilice fracturas — NO intente realinear huesos",
+                "Mantenga a la persona abrigada y tranquila hasta que llegue ayuda",
+            ],
+            "medical_illness": [
+                "Verifique respuesta — golpee hombros y pregunte '¿Estás bien?'",
+                "Si no responde, verifique respiración 10 segundos",
+                "Si no respira: RCP — 30 compresiones al centro del pecho (5 cm), 2 respiraciones",
+                "Si respira pero inconsciente: posición de recuperación",
+            ],
+            "earthquake": [
+                "AGÁCHESE en manos y rodillas",
+                "CÚBRASE bajo una mesa resistente o junto a una pared interior",
+                "SUJÉTESE hasta que pare el temblor",
+                "Revise lesiones en usted y los demás",
+                "Prepárese para réplicas",
+            ],
+            "vehicle_accident": [
+                "Señalice la escena — luces de emergencia, triángulos",
+                "Llame emergencias con ubicación exacta",
+                "Controle hemorragias con presión directa",
+                "NO mueva heridos salvo peligro inmediato (fuego/explosión)",
+            ],
+            "drowning": [
+                "NO entre al agua salvo que sea nadador entrenado",
+                "Extienda un palo, cuerda o rama si la víctima está cerca",
+                "Si está fuera del agua y no respira: 5 respiraciones de rescate, luego RCP",
+                "Quite ropa mojada y abrigue para prevenir hipotermia",
+            ],
+            "fire": [
+                "Alerte a todos — grite '¡FUEGO!' y active alarmas",
+                "Evacúe inmediatamente — no recoja pertenencias",
+                "Manténgase bajo para evitar humo — arrástrece si es necesario",
+                "Una vez fuera, muévase al punto de encuentro designado",
+            ],
+        },
+        "do_nots": {
+            "medical_injury": [
+                "NO retire objetos clavados en heridas",
+                "NO retire vendajes empapados — añada más encima",
+                "NO mueva a alguien con posible lesión en la columna",
+                "NO dé agua a persona inconsciente",
+            ],
+            "medical_illness": [
+                "NO ponga nada en la boca de alguien que convulsiona",
+                "NO mueva a persona inconsciente salvo peligro inmediato",
+                "NO detenga la RCP hasta que llegue ayuda profesional",
+            ],
+        },
+    },
+    "Hindi": {
+        "call":    "📞 112 पर कॉल करें",
+        "do_now":  "⚡ तत्काल कार्रवाई",
+        "do_not":  "🚫 ये न करें",
+        "image":   "📷 छवि प्राप्त हुई। पूर्ण दृश्य विश्लेषण GPU मोड में उपलब्ध है।",
+        "steps": {
+            "medical_injury": [
+                "पास जाने से पहले अपनी सुरक्षा सुनिश्चित करें",
+                "साफ कपड़े से खून बहने वाले घाव पर सीधा दबाव डालें",
+                "अगर हाथ-पैर से खून न रुके तो घाव से 5–7 सेमी ऊपर टूर्निकेट लगाएं",
+                "संदिग्ध फ्रैक्चर को स्थिर करें — हड्डियाँ सीधी करने की कोशिश न करें",
+                "व्यक्ति को गर्म रखें जब तक मदद न आए",
+            ],
+            "medical_illness": [
+                "प्रतिक्रिया जांचें — कंधे थपथपाएं, पूछें 'क्या आप ठीक हैं?'",
+                "बेहोश हो तो 10 सेकंड तक सांस जांचें",
+                "सांस नहीं तो CPR: 30 बार छाती दबाएं (5 सेमी गहरा), 2 सांसें दें",
+                "सांस है पर बेहोश है तो रिकवरी पोजीशन में रखें",
+            ],
+            "earthquake": [
+                "झुकें — हाथों और घुटनों पर",
+                "मजबूत मेज के नीचे या अंदरूनी दीवार के पास ढकें",
+                "कंपन रुकने तक पकड़े रहें",
+                "बाद में खुद और दूसरों की चोटें जांचें",
+            ],
+            "vehicle_accident": [
+                "दृश्य सुरक्षित करें — हजार्ड लाइट चालू करें",
+                "सटीक स्थान के साथ आपातकालीन सेवाओं को कॉल करें",
+                "सीधे दबाव से खून रोकें",
+                "घायलों को तब तक न हिलाएं जब तक तत्काल खतरा न हो",
+            ],
+            "drowning": [
+                "प्रशिक्षित तैराक न हों तो पानी में न उतरें",
+                "डंडा, रस्सी या शाखा बढ़ाएं अगर पीड़ित पास हो",
+                "पानी से बाहर हो और सांस न हो: 5 रेस्क्यू सांसें, फिर CPR",
+                "गीले कपड़े हटाएं, हाइपोथर्मिया से बचाने के लिए गर्म रखें",
+            ],
+        },
+        "do_nots": {
+            "medical_injury": [
+                "घाव में फंसी वस्तु न निकालें",
+                "खून से भीगी पट्टी न हटाएं — ऊपर से और लगाएं",
+                "रीढ़ की हड्डी की संदिग्ध चोट में न हिलाएं",
+                "बेहोश को पानी न दें",
+            ],
+            "medical_illness": [
+                "दौरे के दौरान मुंह में कुछ न डालें",
+                "बेहोश व्यक्ति को तब तक न हिलाएं जब तक खतरा न हो",
+                "CPR तब तक बंद न करें जब तक पेशेवर मदद न आए",
+            ],
+        },
+    },
+    "Arabic": {
+        "call":    "📞 اتصل بـ 911 / 112",
+        "do_now":  "⚡ الإجراءات الفورية",
+        "do_not":  "🚫 لا تفعل",
+        "image":   "📷 تم استلام الصورة. التحليل البصري الكامل متاح في وضع GPU.",
+        "steps": {
+            "medical_injury": [
+                "تأكد من سلامتك قبل الاقتراب",
+                "اضغط مباشرة على الجروح النازفة بقماش نظيف",
+                "إذا استمر النزيف في طرف: ضع عاصبة 5-7 سم فوق الجرح",
+                "ثبّت الكسور المشتبهة — لا تحاول إعادة تصويب العظام",
+                "حافظ على دفء المصاب حتى وصول المساعدة",
+            ],
+            "medical_illness": [
+                "تحقق من الاستجابة — انقر على الكتفين وقل 'هل أنت بخير؟'",
+                "إذا لم يستجب، تحقق من التنفس لمدة 10 ثوانٍ",
+                "إذا لم يتنفس: إنعاش القلب والرئة — 30 ضغطة على الصدر، نفسان",
+            ],
+        },
+        "do_nots": {
+            "medical_injury": [
+                "لا تزل الأجسام المغروسة في الجروح",
+                "لا تحرك شخصاً يشتبه في إصابته بالعمود الفقري",
+                "لا تعطِ ماء لشخص فاقد الوعي",
+            ],
+        },
+    },
+    "French": {
+        "call":    "📞 Appelez le 15 / 112",
+        "do_now":  "⚡ ACTIONS IMMÉDIATES",
+        "do_not":  "🚫 NE PAS FAIRE",
+        "image":   "📷 Image reçue. Analyse visuelle complète disponible en mode GPU.",
+        "steps": {
+            "medical_injury": [
+                "Assurez votre propre sécurité avant d'approcher",
+                "Appuyez directement sur les plaies qui saignent avec un tissu propre",
+                "Si le saignement ne s'arrête pas sur un membre, appliquez un garrot 5–7 cm au-dessus",
+                "Immobilisez les fractures — ne tentez pas de réaligner les os",
+                "Gardez la personne au chaud jusqu'à l'arrivée des secours",
+            ],
+            "medical_illness": [
+                "Vérifiez la réactivité — tapez sur les épaules, demandez 'Vous m'entendez ?'",
+                "Si inconscient, vérifiez la respiration 10 secondes",
+                "Si pas de respiration: RCP — 30 compressions, 2 insufflations",
+                "Si respire mais inconscient: position latérale de sécurité",
+            ],
+            "earthquake": [
+                "BAISSEZ-VOUS à genoux et mains",
+                "PROTÉGEZ-VOUS sous un bureau solide",
+                "TENEZ-VOUS jusqu'à l'arrêt des secousses",
+                "Vérifiez les blessures sur vous et les autres",
+            ],
+        },
+        "do_nots": {
+            "medical_injury": [
+                "Ne retirez PAS les objets plantés dans les blessures",
+                "Ne déplacez PAS quelqu'un avec une blessure rachidienne suspectée",
+                "Ne donnez PAS d'eau à une personne inconsciente",
+            ],
+        },
+    },
+}
+
+
+def detect_language_from_text(text: str) -> str:
+    """Auto-detect language from input text."""
+    hindi = sum(1 for c in text if '\u0900' <= c <= '\u097F')
+    arabic = sum(1 for c in text if '\u0600' <= c <= '\u06FF')
+    if hindi > 2:
+        return "Hindi"
+    if arabic > 2:
+        return "Arabic"
+    spanish = ['terremoto', 'sangre', 'herida', 'ayuda', 'dolor', 'accidente',
+               'mujer', 'hombre', 'niño', 'fuego', 'inundación', 'está']
+    if any(w in text.lower() for w in spanish) or any(c in text for c in 'áéíóúñ¿¡'):
+        return "Spanish"
+    french = ['blessé', 'secours', 'accident', 'incendie', 'noyade', 'tremblement']
+    if any(w in text.lower() for w in french) or any(c in text for c in 'àâçèêëîïôùûüÿœæ'):
+        return "French"
+    return "English"
+
+
+
 
 def load_model():
     """Load Gemma 4 if available, otherwise use offline mode."""
@@ -250,7 +445,7 @@ def assess_severity_offline(emergency_type: str, text: str) -> tuple[str, str]:
     return "GREEN", "No immediately life-threatening indicators detected. Monitor and provide basic care."
 
 
-def run_triage_offline(text: str, language: str) -> dict:
+def run_triage_offline(text: str, language: str, image=None) -> dict:
     """Run triage using offline rule-based engine."""
     emergency_type, scene_safe = classify_emergency_offline(text)
     triage_color, reasoning = assess_severity_offline(emergency_type, text)
@@ -258,16 +453,47 @@ def run_triage_offline(text: str, language: str) -> dict:
     kb_key = emergency_type if emergency_type in KNOWLEDGE_BASE else "medical_injury"
     protocol = KNOWLEDGE_BASE.get(kb_key, KNOWLEDGE_BASE["medical_injury"])
 
-    emergency_num = EMERGENCY_NUMBERS.get(language, EMERGENCY_NUMBERS["Auto-detect"])
+    # Auto-detect language if not explicitly set
+    effective_lang = language
+    if language == "Auto-detect":
+        effective_lang = detect_language_from_text(text)
+
+    emergency_num = EMERGENCY_NUMBERS.get(effective_lang, EMERGENCY_NUMBERS.get(language, EMERGENCY_NUMBERS["Auto-detect"]))
+
+    # Get translated steps if available
+    trans = TRANSLATIONS.get(effective_lang)
+    translated_protocol = None
+    if trans:
+        t_steps = trans.get("steps", {}).get(kb_key) or trans.get("steps", {}).get("medical_injury")
+        t_donots = trans.get("do_nots", {}).get(kb_key) or trans.get("do_nots", {}).get("medical_injury")
+        if t_steps:
+            translated_protocol = {
+                "title": protocol.get("title", ""),
+                "steps": t_steps,
+                "do_not": t_donots or protocol.get("do_not", []),
+                "call_label": trans.get("call", ""),
+                "do_now_label": trans.get("do_now", "⚡ IMMEDIATE ACTIONS"),
+                "do_not_label": trans.get("do_not_label", trans.get("do_not", "🚫 DO NOT")),
+            }
+
+    # Image acknowledgment
+    image_note = None
+    if image is not None:
+        if trans:
+            image_note = trans.get("image")
+        else:
+            image_note = "📷 Image received — full visual analysis of wounds, injuries and scene hazards available in GPU deployment mode."
 
     return {
         "emergency_type": emergency_type,
         "triage_color": triage_color,
         "reasoning": reasoning,
         "scene_safe": scene_safe,
-        "protocol": protocol,
+        "protocol": translated_protocol or protocol,
         "emergency_number": emergency_num,
         "model_mode": "offline",
+        "effective_language": effective_lang,
+        "image_note": image_note,
     }
 
 
@@ -348,12 +574,22 @@ def render_output(result: dict) -> tuple[str, str, str]:
     emergency_num = result.get("emergency_number", "")
 
     steps_html = ""
+    do_now_label = protocol.get("do_now_label", "⚡ DO NOW")
+    do_not_label = protocol.get("do_not_label", "🚫 DO NOT")
     if protocol.get("steps"):
         items = "".join(f"<li style='color:#111111 !important;margin:4px 0;'>→ {s}</li>" for s in protocol["steps"])
         steps_html = f"""
         <div style="background:#FFF0F0 !important;border:1px solid #FF6B6B;border-radius:8px;padding:15px;margin:10px 0;">
-          <h3 style="margin:0 0 8px;color:#B71C1C !important;">⚡ DO NOW</h3>
+          <h3 style="margin:0 0 8px;color:#B71C1C !important;">{do_now_label}</h3>
           <ul style="margin:5px 0;padding-left:20px;color:#111111 !important;">{items}</ul>
+        </div>"""
+
+    image_html = ""
+    image_note = result.get("image_note")
+    if image_note:
+        image_html = f"""
+        <div style="background:#E3F2FD !important;border:1px solid #1565C0;border-radius:8px;padding:12px 15px;margin:10px 0;color:#0D47A1 !important;">
+          {image_note}
         </div>"""
 
     donot_html = ""
@@ -361,7 +597,7 @@ def render_output(result: dict) -> tuple[str, str, str]:
         items = "".join(f"<li style='color:#ffffff !important;margin:4px 0;'>✖ {s}</li>" for s in protocol["do_not"])
         donot_html = f"""
         <div style="background:#2D3436 !important;border-radius:8px;padding:15px;margin:10px 0;">
-          <h3 style="margin:0 0 8px;color:#FF7675 !important;">🚫 DO NOT</h3>
+          <h3 style="margin:0 0 8px;color:#FF7675 !important;">{do_not_label}</h3>
           <ul style="margin:5px 0;padding-left:20px;color:#ffffff !important;">{items}</ul>
         </div>"""
 
@@ -383,6 +619,7 @@ def render_output(result: dict) -> tuple[str, str, str]:
         <p style="margin:6px 0;color:#111111 !important;"><strong style="color:#111111 !important;">Scene Safe:</strong> <span style="color:#111111 !important;">{"Yes ✅" if result.get("scene_safe", True) else "NO ⚠️ — ensure your safety first"}</span></p>
         <p style="margin:6px 0;color:#111111 !important;"><strong style="color:#111111 !important;">Assessment:</strong> <span style="color:#111111 !important;">{reasoning[:300]}</span></p>
       </div>
+      {image_html}
       {steps_html}
       {donot_html}
       <div style="text-align:center;font-size:11px;color:#888888 !important;margin-top:10px;">
@@ -415,7 +652,7 @@ def triage(text: str, image, language: str) -> tuple[str, str, str]:
         if MODEL_LOADED:
             result = run_triage_with_model(text, image, language)
         else:
-            result = run_triage_offline(text, language)
+            result = run_triage_offline(text, language, image=image)
 
         return render_output(result)
     except Exception as e:
