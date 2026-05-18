@@ -1,5 +1,5 @@
-# TriageAI — Submission Writeup
-## Gemma 4 Good Hackathon 2026
+# TriageAI: Offline Emergency Triage for Everyone, Powered by Gemma 4
+*When cell towers fall, lives still shouldn't.*
 
 ---
 
@@ -103,16 +103,16 @@ One of our core design principles: **TriageAI must work when infrastructure fail
 ### NB01 — Main Pipeline (Kaggle / Cloud)
 Full Gemma 4 pipeline with 4-bit quantization (NF4, BitsAndBytes). Runs on a single T4 GPU. Demonstrates the complete function calling + thinking mode + RAG pipeline across 5 emergency scenarios: severe bleeding, chemical burn, Spanish earthquake, Hindi cardiac arrest, multi-vehicle accident.
 
-### NB02 — Unsloth Fine-Tuning ($10K Prize)
+### NB02 — Unsloth Fine-Tuning
 Fine-tuned Gemma 4 E2B-IT on 200+ curated triage examples in ShareGPT format using Unsloth LoRA (r=16, alpha=32). Training accuracy improved from 20% → 99% on START protocol classification in 60 steps. LoRA adapters saved. GGUF export wrapped for CPU deployment. Benchmarked before vs. after on 5 clinical scenarios.
 
-### NB03 — Ollama Local Deployment ($10K Prize)
+### NB03 — Ollama Local Deployment
 Pulls `gemma4:e2b` via Ollama, creates a custom `triageai` Modelfile with embedded system prompt and medical persona, tests across English/Spanish/Hindi scenarios. One command to deploy: `ollama run triageai`. Benchmarked response times and correctness.
 
-### NB04 — llama.cpp CPU-Only ($10K Prize)
+### NB04 — llama.cpp CPU-Only Inference
 Downloads Gemma 4 E2B-IT in GGUF Q4_K_M quantization (~3.5 GB RAM). Loads with `n_gpu_layers=0` — pure CPU, zero VRAM. Runs emergency triage on a laptop with no GPU whatsoever. Tested across 3 scenarios including Spanish. This is the deployment path for disaster zones where only a basic laptop is available.
 
-### NB05 — Cactus Intelligent Routing ($10K Prize)
+### NB05 — Intelligent Model Routing
 `CactusRouter` assigns complexity scores (0–100) to incoming queries based on critical keywords, severity indicators, query length, and language. Simple GREEN queries route to Gemma 4 E2B (fast, edge-deployable, ~3.5 GB VRAM); serious YELLOW/RED queries route to Gemma 4 E4B (full reasoning, ~5.5 GB VRAM). Both models loaded simultaneously on a single T4 (~9 GB total). Demonstrated ~40–60% compute savings on simple queries with zero accuracy loss on critical ones.
 
 ---
@@ -165,25 +165,22 @@ Gemma 4 is the **only open model family** that combines multimodal vision, relia
 
 ---
 
-## Alignment with Competition Tracks
+## How This Fits the Competition Themes
 
-| Track | How TriageAI Qualifies |
+| Theme | How TriageAI Addresses It |
 |---|---|
-| **Main Track** | Full-stack Gemma 4 application with real-world impact |
-| **Global Resilience ($10K)** | Offline disaster response — word-for-word match with track description |
-| **Health & Sciences ($10K)** | Democratizes emergency medical knowledge at scale |
-| **Digital Equity ($10K)** | Multilingual, works on cheap hardware, no internet |
-| **Unsloth ($10K)** | Fine-tuned Gemma 4 E2B with 99% accuracy |
-| **Ollama ($10K)** | One-command local deployment with custom Modelfile |
-| **llama.cpp ($10K)** | Pure CPU inference on GGUF, no GPU required |
-| **Cactus ($10K)** | Intelligent E2B/E4B routing by emergency severity |
+| **Global Resilience** | Offline disaster response — works when infrastructure collapses |
+| **Health & Sciences** | Democratizes emergency medical knowledge at scale |
+| **Digital Equity** | Multilingual, runs on cheap hardware, no internet required |
+| **Offline / Edge AI** | Five deployment paths: GPU, Ollama, llama.cpp CPU, fine-tuned, routed |
+| **Gemma 4 Unique Features** | Function calling + thinking mode + vision + multilingual — all four |
 
 ---
 
 ## Limitations & Honest Disclosure
 
 - **Not a substitute for professional medical care.** TriageAI is a decision-support tool. Always call emergency services.
-- **Fine-tuned model** was trained on a Kaggle T4 GPU. GGUF export is wrapped in try/except due to memory constraints on T4, but training (the prize-winning content) completed successfully with 99% accuracy.
+- **Fine-tuned model** was trained on a Kaggle T4 GPU. GGUF export is wrapped in try/except due to memory constraints on T4, but the fine-tuning itself (20% → 99% accuracy) completed successfully.
 - **HuggingFace demo** runs in offline mode — the full GPU pipeline requires a T4/A10 GPU instance.
 - Protocols are based on AHA, Red Cross, WHO, and FEMA guidelines but have not been clinically validated.
 
