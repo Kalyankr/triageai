@@ -46,8 +46,6 @@ Always call emergency services (911 / 112 / 999) for life-threatening situations
 
 ## Hackathon
 
-Built for the [Gemma 4 Good Hackathon](https://www.kaggle.com/competitions/gemma-4-good-hackathon) — targeting:
-- Main Prize (Health & Global Resilience track)
-- Unsloth $10K · Ollama $10K · llama.cpp $10K · Cactus $10K
+Built for the [Gemma 4 Good Hackathon](https://www.kaggle.com/competitions/gemma-4-good-hackathon).
 
 **GitHub**: [Kalyankr/triageai](https://github.com/Kalyankr/triageai)

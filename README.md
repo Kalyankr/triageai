@@ -67,13 +67,13 @@ User Input (photo + text, any language)
 
 ## Notebooks
 
-| Notebook | Description | Prize |
-|---|---|---|
-| [01_triageai_main](notebooks/01_triageai_main.ipynb) | Full triage pipeline with 5 demo scenarios | Main Track |
-| [02_unsloth_finetune](notebooks/02_unsloth_finetune.ipynb) | Fine-tune on 200+ triage examples, before/after benchmarks | Unsloth $10K |
-| [03_ollama_deploy](notebooks/03_ollama_deploy.ipynb) | Local deployment via Ollama, 3 languages | Ollama $10K |
-| [04_llamacpp_cpu](notebooks/04_llamacpp_cpu.ipynb) | CPU-only inference via GGUF, no GPU required | llama.cpp $10K |
-| [05_cactus_routing](notebooks/05_cactus_routing.ipynb) | Intelligent E2B/E4B routing by severity | Cactus $10K |
+| Notebook | Description |
+|---|---|
+| [01_triageai_main](notebooks/01_triageai_main.ipynb) | Full triage pipeline with 5 demo scenarios |
+| [02_unsloth_finetune](notebooks/02_unsloth_finetune.ipynb) | Fine-tune on 200+ triage examples, before/after benchmarks |
+| [03_ollama_deploy](notebooks/03_ollama_deploy.ipynb) | Local deployment via Ollama, 3 languages |
+| [04_llamacpp_cpu](notebooks/04_llamacpp_cpu.ipynb) | CPU-only inference via GGUF, no GPU required |
+| [05_cactus_routing](notebooks/05_cactus_routing.ipynb) | Intelligent E2B/E4B routing by severity |
 
 ## Knowledge Base
 
