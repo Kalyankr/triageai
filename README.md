@@ -72,6 +72,10 @@ User Input (photo + text, any language)
 
 All protocols include translations in Spanish, Hindi, Arabic, and French.
 
+## Live Demo
+
+**[🚀 Try TriageAI on HuggingFace Spaces](https://huggingface.co/spaces/kalyanreddy77/triageai)**
+
 ## Quick Start
 
 ### Run the Kaggle Notebook
