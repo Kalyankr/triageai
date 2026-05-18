@@ -11,10 +11,10 @@ import gradio as gr
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 TRIAGE_COLORS = {
-    "RED": {"bg": "#FF000020", "border": "#FF0000", "label": "IMMEDIATE", "emoji": "🔴", "description": "Life-threatening — needs immediate intervention"},
-    "YELLOW": {"bg": "#FFD70020", "border": "#FFD700", "label": "DELAYED", "emoji": "🟡", "description": "Serious but can wait — monitor closely"},
-    "GREEN": {"bg": "#00AA0020", "border": "#00AA00", "label": "MINOR", "emoji": "🟢", "description": "Walking wounded — minimal intervention needed"},
-    "BLACK": {"bg": "#33333320", "border": "#333333", "label": "EXPECTANT", "emoji": "⚫", "description": "Beyond current help — comfort care only"},
+    "RED": {"bg": "#FFEBEE", "border": "#CC0000", "label": "IMMEDIATE", "emoji": "🔴", "description": "Life-threatening — needs immediate intervention"},
+    "YELLOW": {"bg": "#FFFDE7", "border": "#F9A825", "label": "DELAYED", "emoji": "🟡", "description": "Serious but can wait — monitor closely"},
+    "GREEN": {"bg": "#E8F5E9", "border": "#2E7D32", "label": "MINOR", "emoji": "🟢", "description": "Walking wounded — minimal intervention needed"},
+    "BLACK": {"bg": "#ECEFF1", "border": "#455A64", "label": "EXPECTANT", "emoji": "⚫", "description": "Beyond current help — comfort care only"},
 }
 
 KNOWLEDGE_BASE = {
@@ -349,43 +349,43 @@ def render_output(result: dict) -> tuple[str, str, str]:
 
     steps_html = ""
     if protocol.get("steps"):
-        items = "".join(f"<li>→ {s}</li>" for s in protocol["steps"])
+        items = "".join(f"<li style='color:#1a1a1a;'>→ {s}</li>" for s in protocol["steps"])
         steps_html = f"""
         <div style="background:#FFF0F0;border:1px solid #FF6B6B;border-radius:8px;padding:15px;margin:10px 0;">
-          <h3 style="margin:0 0 8px;color:#D63031;">⚡ DO NOW</h3>
-          <ul style="margin:5px 0;padding-left:20px;">{items}</ul>
+          <h3 style="margin:0 0 8px;color:#B71C1C;">⚡ DO NOW</h3>
+          <ul style="margin:5px 0;padding-left:20px;color:#1a1a1a;">{items}</ul>
         </div>"""
 
     donot_html = ""
     if protocol.get("do_not"):
-        items = "".join(f"<li>✖ {s}</li>" for s in protocol["do_not"])
+        items = "".join(f"<li style='color:#ffffff;'>✖ {s}</li>" for s in protocol["do_not"])
         donot_html = f"""
-        <div style="background:#2D3436;color:#FFF;border-radius:8px;padding:15px;margin:10px 0;">
+        <div style="background:#2D3436;border-radius:8px;padding:15px;margin:10px 0;">
           <h3 style="margin:0 0 8px;color:#FF7675;">🚫 DO NOT</h3>
-          <ul style="margin:5px 0;padding-left:20px;">{items}</ul>
+          <ul style="margin:5px 0;padding-left:20px;color:#ffffff;">{items}</ul>
         </div>"""
 
     card_html = f"""
-    <div style="font-family:system-ui,sans-serif;max-width:700px;">
-      <div style="background:#FFF3CD;border:1px solid #FFEAA7;border-radius:6px;padding:10px 15px;margin-bottom:12px;font-size:13px;color:#856404;">
+    <div style="font-family:system-ui,sans-serif;max-width:700px;color:#1a1a1a;">
+      <div style="background:#FFF8E1;border:1px solid #F9A825;border-radius:6px;padding:10px 15px;margin-bottom:12px;font-size:13px;color:#5D4037;">
         ⚠️ <strong>Not a substitute for professional medical care.</strong> Call emergency services immediately.
         <br>📞 Emergency: <strong>{emergency_num}</strong>
       </div>
-      <div style="background:{c['bg']};border-left:8px solid {c['border']};border-radius:8px;padding:20px;margin-bottom:12px;">
+      <div style="background:{c['bg']};border-left:8px solid {c['border']};border-radius:8px;padding:20px;margin-bottom:12px;color:#1a1a1a;">
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:10px;">
           <span style="font-size:36px;">{c['emoji']}</span>
           <div>
             <h2 style="margin:0;color:{c['border']};">{c['label']} — {color}</h2>
-            <p style="margin:2px 0;font-size:15px;color:#555;">{c['description']}</p>
+            <p style="margin:2px 0;font-size:15px;color:#333;">{c['description']}</p>
           </div>
         </div>
-        <p><strong>Emergency Type:</strong> {etype}</p>
-        <p><strong>Scene Safe:</strong> {"Yes ✅" if result.get("scene_safe", True) else "NO ⚠️ — ensure your safety first"}</p>
-        <p><strong>Assessment:</strong> {reasoning[:300]}</p>
+        <p style="color:#1a1a1a;"><strong>Emergency Type:</strong> {etype}</p>
+        <p style="color:#1a1a1a;"><strong>Scene Safe:</strong> {"Yes ✅" if result.get("scene_safe", True) else "NO ⚠️ — ensure your safety first"}</p>
+        <p style="color:#1a1a1a;"><strong>Assessment:</strong> {reasoning[:300]}</p>
       </div>
       {steps_html}
       {donot_html}
-      <div style="text-align:center;font-size:11px;color:#999;margin-top:10px;">
+      <div style="text-align:center;font-size:11px;color:#888;margin-top:10px;">
         Mode: {result.get('model_mode', 'offline')} · Powered by Gemma 4 · TriageAI
       </div>
     </div>"""
