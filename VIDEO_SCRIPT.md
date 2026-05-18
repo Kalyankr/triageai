@@ -13,36 +13,47 @@
 
 ---
 
-## [0:00 – 0:20] HOOK — The moment
+## [0:00 – 0:25] HOOK — The real story
 
-**SCREEN:** Black screen. White text appears, typewriter style:
+**SCREEN:** Black screen. White text appears, line by line:
 
-> *7:43 AM. Rural highway. School bus overturned.*  
-> *22 children. Nearest hospital: 34 minutes.*  
-> *Cell service: intermittent.*  
-> *Only adults on scene: a truck driver and a passing cyclist.*
+> *A bus carrying 40 children hit a train.*  
+> *Unstaffed level crossing. Village in India.*  
+> *Nearest ambulance: 50 kilometers.*  
+> *16 children did not go home that day.*
 
-**VOICEOVER:**
-> "They have no training. No signal. No idea who to help first, or what not to do.
-> One child has a spinal injury. Someone moves her.
-> This isn't a hypothetical. This happens every day."
+**VOICEOVER (personal, quiet — this is your voice, your story):**
+> "I was there. I helped pull children from the wreckage.
+> The farmers around me rushed in — they wanted to help.
+> They didn't know how.
+>
+> Nobody moved with certainty. Nobody knew who to help first.
+> Nobody knew which child might have a spinal injury.
+> Nobody knew what not to do.
+>
+> I had some knowledge. Most people there had none.
+> And I kept asking myself — what if there had been something
+> that could have told us what to do?
+>
+> That question is why I built TriageAI."
 
 ---
 
-## [0:20 – 0:35] PROBLEM STATEMENT
+## [0:25 – 0:40] PROBLEM STATEMENT
 
-**SCREEN:** Slow zoom on a world map with disaster markers (or just keep white text on black)
+**SCREEN:** Simple white text on black
 
 > *160 million people affected by disasters every year.*  
 > *8–30 minutes before paramedics arrive.*  
-> *The bystander is the real first responder.*  
+> *The bystander is always there first.*  
 > *Nobody has ever given them the tools to act.*
 
 **VOICEOVER:**
-> "The gap between disaster and paramedic is 8 to 30 minutes.
-> In those minutes, the only person who can help is whoever happens to be standing there.
-> We asked untrained people to make life-or-death decisions for decades — with nothing but panic and instinct.
-> TriageAI changes that."
+> "That crossing in India is not an exception. It is the rule.
+> Every day, in disaster zones, on rural roads, in villages — the first person on scene
+> is untrained, unequipped, and alone.
+> They are the difference between life and death.
+> And for decades, we have given them nothing."
 
 ---
 
@@ -125,8 +136,8 @@
 
 **VOICEOVER (slow, deliberate):**
 
-> "The truck driver on a rural highway after a school bus crash.
-> No signal. No training. Eight minutes.
+> "The farmer at an unstaffed rail crossing in India,
+> holding an injured child, not knowing if moving her will kill her.
 
 > The community health worker in rural Kenya —
 > serving a village 60 kilometers from the nearest hospital,

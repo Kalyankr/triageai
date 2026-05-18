@@ -3,17 +3,25 @@
 
 ---
 
-## The Moment That Inspired This
+## Why This Exists — A Real Story
 
-It is 7:43 AM on a Tuesday. A school bus has overturned on a rural highway. There are 22 children. The nearest hospital is 34 minutes away. Cell service is intermittent. The only adults on scene are a truck driver and a passing cyclist.
+I was there.
 
-They have no training. They have no signal. They have no idea who to help first, what to do, or what not to do.
+A bus carrying over 40 children — aged three to fourteen — collided with the Nanded-Hyderabad Passenger train at an unstaffed level crossing in a village in India. Sixteen children, the bus driver, and the cleaner were killed. Twenty more children were pulled out and taken to hospital in Kompally, 50 kilometers away.
 
-One of the children has a spinal injury. Someone moves her.
+The farmers who rushed to the scene wanted desperately to help. They did not know how. They moved children without knowing whether their spines were intact. They didn't know how to check if a child was breathing, how to stop bleeding, how to tell who needed help first. They had never been taught. Nobody had ever taught them. There was no infrastructure at that crossing, no signal, no trained person within reach — just a dirt road, a broken bus, and forty children.
 
-This is not a hypothetical. Variations of this scene happen every day — after earthquakes, floods, car accidents, cardiac events. And in each one, the bystander is the real first responder. They arrive before the paramedic. They are the difference between life and death. But **nobody has ever given them the tools to act.**
+I helped pull children from the wreckage. I tried to be careful. But I was terrified too — not of the scene, but of my own uncertainty. Is this child concussed? Does she have a spinal injury? Am I making it worse by moving her? What do I do if she stops breathing? I had some knowledge. Most people there had none.
 
-Until now.
+Sixteen children did not go home that day.
+
+I don't know if better information in that moment would have changed the outcome. But I know that no one standing at that crossing had any tools to act on. No guidance. No protocol. No way to know what to do first.
+
+That is why I built TriageAI.
+
+Not as a product. Not as a competition entry. As an answer to a question I couldn't stop asking: **what if there had been something — anything — that could have told those farmers what to do?**
+
+Until now, that something did not exist for people like them — no internet, no training, no English, no time. TriageAI is that something.
 
 ---
 
@@ -168,7 +176,7 @@ The live demo requires no signup, no API key, and no installation. Type or uploa
 
 ### The People This Is For
 
-**The truck driver** on a rural highway after a school bus crash, with no signal and no training.
+**The farmer at an unstaffed rail crossing** — holding an injured child, not knowing if moving her will cause more damage than the crash already did.
 
 **The community health worker** in rural Kenya, Nigeria, or Bangladesh — serving a population 60 km from the nearest hospital, on a $150 Android phone.
 
