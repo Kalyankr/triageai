@@ -1,8 +1,2 @@
-gradio>=4.0.0
-transformers>=4.45.0
-accelerate>=0.34.0
-bitsandbytes>=0.44.0
+gradio>=4.44.1
 Pillow>=10.0.0
-sentencepiece
-protobuf
-torch>=2.0.0

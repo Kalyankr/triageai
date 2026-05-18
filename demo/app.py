@@ -505,12 +505,13 @@ with gr.Blocks(css=CSS, title="TriageAI — Emergency Triage", theme=gr.themes.S
     """)
 
 
+# On HuggingFace Spaces, Gradio calls demo.launch() automatically.
+# Model loading is skipped on CPU-only free tier — offline mode handles everything.
+load_model()
+if MODEL_LOADED:
+    print("Gemma 4 loaded successfully! Running with full AI capabilities.")
+else:
+    print("Running in offline demo mode (no GPU/model available).")
+
 if __name__ == "__main__":
-    print("Starting TriageAI demo...")
-    print("Attempting to load Gemma 4 model...")
-    load_model()
-    if MODEL_LOADED:
-        print("Gemma 4 loaded successfully! Running with full AI capabilities.")
-    else:
-        print("Running in offline demo mode (no GPU/model available).")
-    demo.launch(share=True)
+    demo.launch()
