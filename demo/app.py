@@ -511,7 +511,7 @@ with gr.Blocks(css=CSS, title="TriageAI — Emergency Triage", theme=gr.themes.S
         fn=triage,
         inputs=[text, image, language],
         outputs=[triage_card, actions_output, thinking_output],
-        api_name="triage",
+        api_name=False,
     )
 
     gr.HTML("""
@@ -529,4 +529,4 @@ print("TriageAI running in offline demo mode.")
 demo.queue()  # Required for HF Spaces API to work
 
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(show_api=False)
