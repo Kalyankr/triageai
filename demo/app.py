@@ -349,43 +349,43 @@ def render_output(result: dict) -> tuple[str, str, str]:
 
     steps_html = ""
     if protocol.get("steps"):
-        items = "".join(f"<li style='color:#1a1a1a;'>→ {s}</li>" for s in protocol["steps"])
+        items = "".join(f"<li style='color:#111111 !important;margin:4px 0;'>→ {s}</li>" for s in protocol["steps"])
         steps_html = f"""
-        <div style="background:#FFF0F0;border:1px solid #FF6B6B;border-radius:8px;padding:15px;margin:10px 0;">
-          <h3 style="margin:0 0 8px;color:#B71C1C;">⚡ DO NOW</h3>
-          <ul style="margin:5px 0;padding-left:20px;color:#1a1a1a;">{items}</ul>
+        <div style="background:#FFF0F0 !important;border:1px solid #FF6B6B;border-radius:8px;padding:15px;margin:10px 0;">
+          <h3 style="margin:0 0 8px;color:#B71C1C !important;">⚡ DO NOW</h3>
+          <ul style="margin:5px 0;padding-left:20px;color:#111111 !important;">{items}</ul>
         </div>"""
 
     donot_html = ""
     if protocol.get("do_not"):
-        items = "".join(f"<li style='color:#ffffff;'>✖ {s}</li>" for s in protocol["do_not"])
+        items = "".join(f"<li style='color:#ffffff !important;margin:4px 0;'>✖ {s}</li>" for s in protocol["do_not"])
         donot_html = f"""
-        <div style="background:#2D3436;border-radius:8px;padding:15px;margin:10px 0;">
-          <h3 style="margin:0 0 8px;color:#FF7675;">🚫 DO NOT</h3>
-          <ul style="margin:5px 0;padding-left:20px;color:#ffffff;">{items}</ul>
+        <div style="background:#2D3436 !important;border-radius:8px;padding:15px;margin:10px 0;">
+          <h3 style="margin:0 0 8px;color:#FF7675 !important;">🚫 DO NOT</h3>
+          <ul style="margin:5px 0;padding-left:20px;color:#ffffff !important;">{items}</ul>
         </div>"""
 
     card_html = f"""
-    <div style="font-family:system-ui,sans-serif;max-width:700px;color:#1a1a1a;">
-      <div style="background:#FFF8E1;border:1px solid #F9A825;border-radius:6px;padding:10px 15px;margin-bottom:12px;font-size:13px;color:#5D4037;">
-        ⚠️ <strong>Not a substitute for professional medical care.</strong> Call emergency services immediately.
-        <br>📞 Emergency: <strong>{emergency_num}</strong>
+    <div style="font-family:system-ui,sans-serif;max-width:700px;background:#ffffff !important;border-radius:12px;padding:6px;">
+      <div style="background:#FFF8E1 !important;border:1px solid #F9A825;border-radius:6px;padding:10px 15px;margin-bottom:12px;font-size:13px;color:#5D4037 !important;">
+        ⚠️ <strong style="color:#5D4037 !important;">Not a substitute for professional medical care.</strong> <span style="color:#5D4037 !important;">Call emergency services immediately.</span>
+        <br>📞 <span style="color:#5D4037 !important;">Emergency: <strong>{emergency_num}</strong></span>
       </div>
-      <div style="background:{c['bg']};border-left:8px solid {c['border']};border-radius:8px;padding:20px;margin-bottom:12px;color:#1a1a1a;">
+      <div style="background:{c['bg']} !important;border-left:8px solid {c['border']};border-radius:8px;padding:20px;margin-bottom:12px;">
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:10px;">
           <span style="font-size:36px;">{c['emoji']}</span>
           <div>
-            <h2 style="margin:0;color:{c['border']};">{c['label']} — {color}</h2>
-            <p style="margin:2px 0;font-size:15px;color:#333;">{c['description']}</p>
+            <h2 style="margin:0;color:{c['border']} !important;">{c['label']} — {color}</h2>
+            <p style="margin:2px 0;font-size:15px;color:#333333 !important;">{c['description']}</p>
           </div>
         </div>
-        <p style="color:#1a1a1a;"><strong>Emergency Type:</strong> {etype}</p>
-        <p style="color:#1a1a1a;"><strong>Scene Safe:</strong> {"Yes ✅" if result.get("scene_safe", True) else "NO ⚠️ — ensure your safety first"}</p>
-        <p style="color:#1a1a1a;"><strong>Assessment:</strong> {reasoning[:300]}</p>
+        <p style="margin:6px 0;color:#111111 !important;"><strong style="color:#111111 !important;">Emergency Type:</strong> <span style="color:#111111 !important;">{etype}</span></p>
+        <p style="margin:6px 0;color:#111111 !important;"><strong style="color:#111111 !important;">Scene Safe:</strong> <span style="color:#111111 !important;">{"Yes ✅" if result.get("scene_safe", True) else "NO ⚠️ — ensure your safety first"}</span></p>
+        <p style="margin:6px 0;color:#111111 !important;"><strong style="color:#111111 !important;">Assessment:</strong> <span style="color:#111111 !important;">{reasoning[:300]}</span></p>
       </div>
       {steps_html}
       {donot_html}
-      <div style="text-align:center;font-size:11px;color:#888;margin-top:10px;">
+      <div style="text-align:center;font-size:11px;color:#888888 !important;margin-top:10px;">
         Mode: {result.get('model_mode', 'offline')} · Powered by Gemma 4 · TriageAI
       </div>
     </div>"""
