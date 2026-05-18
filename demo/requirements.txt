@@ -1,2 +1,2 @@
-gradio>=4.44.1
+gradio>=5.9.1
 Pillow>=10.0.0
