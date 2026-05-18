@@ -603,9 +603,9 @@ def render_output(result: dict) -> tuple[str, str, str]:
 
     card_html = f"""
     <div style="font-family:system-ui,sans-serif;max-width:700px;background:#ffffff !important;border-radius:12px;padding:6px;">
-      <div style="background:#FFF8E1 !important;border:1px solid #F9A825;border-radius:6px;padding:10px 15px;margin-bottom:12px;font-size:13px;color:#5D4037 !important;">
-        ⚠️ <strong style="color:#5D4037 !important;">Not a substitute for professional medical care.</strong> <span style="color:#5D4037 !important;">Call emergency services immediately.</span>
-        <br>📞 <span style="color:#5D4037 !important;">Emergency: <strong>{emergency_num}</strong></span>
+      <div style="background:#FFF8E1 !important;border:2px solid #F9A825;border-radius:6px;padding:10px 15px;margin-bottom:12px;font-size:13px;">
+        <span style="color:#5D4037 !important;">⚠️ <strong style="color:#5D4037 !important;">Not a substitute for professional medical care.</strong> Call emergency services immediately.</span>
+        <br><span style="color:#B71C1C !important;font-weight:bold;font-size:15px;">📞 Emergency: {emergency_num}</span>
       </div>
       <div style="background:{c['bg']} !important;border-left:8px solid {c['border']};border-radius:8px;padding:20px;margin-bottom:12px;">
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:10px;">
