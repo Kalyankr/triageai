@@ -402,15 +402,24 @@ def render_output(result: dict) -> tuple[str, str, str]:
 
 def triage(text: str, image, language: str) -> tuple[str, str, str]:
     """Main triage function called by Gradio."""
-    if not text and image is None:
-        return "<p>Please provide a description of the emergency or upload a photo.</p>", "", ""
+    try:
+        if not text and image is None:
+            return "<p style='color:#555;padding:20px;'>Please provide a description of the emergency or upload a photo.</p>", "", ""
 
-    if MODEL_LOADED:
-        result = run_triage_with_model(text, image, language)
-    else:
-        result = run_triage_offline(text, language)
+        if MODEL_LOADED:
+            result = run_triage_with_model(text, image, language)
+        else:
+            result = run_triage_offline(text, language)
 
-    return render_output(result)
+        return render_output(result)
+    except Exception as e:
+        error_html = f"""
+        <div style="background:#FFF0F0;border:2px solid #FF0000;border-radius:8px;padding:20px;font-family:system-ui;">
+          <h3 style="color:#CC0000;">⚠️ Triage Error</h3>
+          <p style="color:#333;">{str(e)}</p>
+          <p style="color:#666;font-size:13px;">Please try again or use one of the Quick Scenario buttons.</p>
+        </div>"""
+        return error_html, f"Error: {str(e)}", ""
 
 
 QUICK_SCENARIOS = {
@@ -437,21 +446,22 @@ footer { display: none !important; }
 with gr.Blocks(css=CSS, title="TriageAI — Emergency Triage", theme=gr.themes.Soft()) as demo:
     gr.HTML("""
     <div style="text-align:center;padding:20px 0 10px;">
-      <h1 style="margin:0;">🚨 TriageAI</h1>
-      <p style="font-size:18px;color:#666;margin:5px 0;">
+      <h1 style="margin:0;color:#d32f2f;">🚨 TriageAI</h1>
+      <p style="font-size:18px;color:#444;margin:5px 0;">
         Offline Multilingual Emergency Triage · Powered by Gemma 4
       </p>
-      <p style="font-size:14px;color:#999;">
+      <p style="font-size:14px;color:#666;">
         When every second counts and networks are down.
       </p>
     </div>
     """)
 
-    gr.HTML("""<div class="disclaimer">
-      ⚠️ <strong>MEDICAL DISCLAIMER:</strong> TriageAI is an AI assistant and
-      <strong>NOT a substitute for professional medical care.</strong>
+    gr.HTML("""<div style="background:#FFF8E1;border:2px solid #F9A825;border-radius:8px;padding:12px 16px;margin:8px 0;color:#333333;font-size:14px;">
+      ⚠️ <strong style="color:#E65100;">MEDICAL DISCLAIMER:</strong>
+      <span style="color:#333333;">TriageAI is an AI assistant and
+      <strong style="color:#E65100;">NOT a substitute for professional medical care.</strong>
       Always call emergency services for life-threatening situations.
-      This tool provides general first-aid guidance based on established protocols.
+      This tool provides general first-aid guidance based on established protocols.</span>
     </div>""")
 
     with gr.Row():
@@ -495,6 +505,7 @@ with gr.Blocks(css=CSS, title="TriageAI — Emergency Triage", theme=gr.themes.S
         fn=triage,
         inputs=[text, image, language],
         outputs=[triage_card, actions_output, thinking_output],
+        api_name="triage",
     )
 
     gr.HTML("""
@@ -505,13 +516,11 @@ with gr.Blocks(css=CSS, title="TriageAI — Emergency Triage", theme=gr.themes.S
     """)
 
 
-# On HuggingFace Spaces, Gradio calls demo.launch() automatically.
-# Model loading is skipped on CPU-only free tier — offline mode handles everything.
-load_model()
-if MODEL_LOADED:
-    print("Gemma 4 loaded successfully! Running with full AI capabilities.")
-else:
-    print("Running in offline demo mode (no GPU/model available).")
+# HuggingFace free tier: always offline mode (no GPU/model).
+# load_model() intentionally NOT called at startup — offline rule-based engine handles everything.
+print("TriageAI running in offline demo mode.")
+
+demo.queue()  # Required for HF Spaces API to work
 
 if __name__ == "__main__":
     demo.launch()
