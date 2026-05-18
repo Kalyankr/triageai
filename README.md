@@ -1,3 +1,16 @@
+---
+title: TriageAI — Emergency Triage
+emoji: 🚨
+colorFrom: red
+colorTo: yellow
+sdk: gradio
+sdk_version: 5.9.1
+app_file: demo/app.py
+pinned: true
+license: apache-2.0
+short_description: Offline multilingual emergency triage powered by Gemma 4
+---
+
 # TriageAI — Offline Multilingual Emergency Triage
 
 **When every second counts and networks are down.**
